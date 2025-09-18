@@ -31,7 +31,6 @@ El objetivo es que cada participante pueda **crear, publicar y difundir** materi
 | **10** | Difusión y Licencias Abiertas (Optativo) | - Creative Commons.<br>- Publicación en Zenodo / OSF / GitHub Pages. |
 
 
-
 ## 🌟 Proyecto Final
 Cada participante entrega un **Kit Docente Reproducible**, que incluye:  
 - Carpeta en Google Drive (Docs, Sheets, Slides).  

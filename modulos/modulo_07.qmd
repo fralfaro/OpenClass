@@ -1,0 +1,131 @@
+---
+title: "Módulo 7"
+subtitle: "Introducción a la Programación en R y Python"
+format:
+  html:
+    toc: true
+---
+
+# Introducción a la Programación en R y Python
+
+En este módulo daremos los primeros pasos en **programación con R y Python**, dos lenguajes ampliamente usados en ciencia de datos, docencia e investigación.
+El objetivo es que los participantes comprendan los **conceptos fundamentales** y logren escribir pequeños programas que les permitan resolver problemas simples.
+
+
+
+## Objetivos de aprendizaje
+
+* Comprender la estructura básica de un programa en R y en Python.
+* Declarar variables y realizar operaciones matemáticas simples.
+* Crear y manipular vectores o listas.
+* Escribir estructuras de control: condicionales y bucles.
+* Desarrollar ejemplos prácticos aplicados a la educación y la ciencia de datos.
+
+
+
+## Conceptos clave
+
+1. **Lenguajes interpretados**: no requieren compilación, se ejecutan línea por línea.
+2. **Sintaxis básica**: cómo se escriben instrucciones en cada lenguaje.
+3. **Variables**: nombres asociados a valores.
+4. **Estructuras de datos simples**: listas, vectores y data frames.
+5. **Control de flujo**: condicionales (`if`) y bucles (`for`, `while`).
+
+
+
+## Ejemplo en Python
+
+Archivo `intro_python.py`:
+
+```python
+# Variables y operaciones
+a = 5
+b = 3
+suma = a + b
+print("La suma es:", suma)
+
+# Listas
+estudiantes = ["Ana", "Luis", "Pedro"]
+print("Primer estudiante:", estudiantes[0])
+
+# Condicional
+nota = 5.8
+if nota >= 5.5:
+    print("Aprobado")
+else:
+    print("Reprobado")
+
+# Bucle
+for i in range(1, 6):
+    print("Número:", i)
+```
+
+
+
+## Ejemplo en R
+
+Archivo `intro_r.R`:
+
+```r
+# Variables y operaciones
+a <- 5
+b <- 3
+suma <- a + b
+print(paste("La suma es:", suma))
+
+# Vectores
+estudiantes <- c("Ana", "Luis", "Pedro")
+print(paste("Primer estudiante:", estudiantes[1]))
+
+# Condicional
+nota <- 5.8
+if (nota >= 5.5) {
+  print("Aprobado")
+} else {
+  print("Reprobado")
+}
+
+# Bucle
+for (i in 1:5) {
+  print(paste("Número:", i))
+}
+```
+
+
+
+## Comparación de sintaxis
+
+
+| Concepto        | Python               | R                        |
+| --------------- | -------------------- | ------------------------ |
+| Asignar valor   | `x = 10`             | `x <- 10`                |
+| Listas/vectores | `lista = [1, 2, 3]`  | `vec <- c(1, 2, 3)`      |
+| Condicional     | `if x > 5:`          | `if (x > 5) { ... }`     |
+| Bucle `for`     | `for i in range(5):` | `for (i in 1:5) { ... }` |
+| Imprimir        | `print("Hola")`      | `print("Hola")`          |
+
+
+
+## Actividad práctica
+
+1. En Python:
+
+   * Crea una lista con 5 notas ficticias de estudiantes.
+   * Calcula el promedio y muestra si el grupo aprueba o no.
+
+2. En R:
+
+   * Crea un vector con las mismas notas.
+   * Usa una estructura `if` para determinar el estado del grupo.
+
+
+
+## Resultado esperado
+
+Al finalizar este módulo, los participantes serán capaces de:
+
+* Escribir programas básicos en R y Python.
+* Usar variables, estructuras de datos simples y bucles.
+* Aplicar condicionales a problemas educativos sencillos.
+* Comprender similitudes y diferencias entre ambos lenguajes.
+

@@ -1,0 +1,119 @@
+---
+title: "Módulo 2"
+subtitle: "ChatGPT en la Docencia"
+format:
+  html:
+    toc: true
+---
+
+# ChatGPT en la Docencia
+
+En este módulo exploraremos cómo **ChatGPT** puede apoyar a los docentes en la creación de materiales, actividades y recursos educativos.  
+El objetivo es que los participantes comprendan cómo **usar la IA como asistente creativo y productivo**, siempre con un enfoque ético y responsable.  
+
+<img src="images/chatgpt_education.jpg" alt="ChatGPT" width="400"/>
+
+
+
+## Objetivos de aprendizaje
+
+- Aprender a generar materiales educativos con ChatGPT.  
+- Crear evaluaciones, rúbricas y ejemplos adaptados a distintos niveles.  
+- Explorar usos de ChatGPT para redacción académica y apoyo en LaTeX/Quarto.  
+- Reflexionar sobre los límites, sesgos y buenas prácticas en el uso de IA.  
+
+
+
+## Usos principales en la docencia
+
+1. **Creación de materiales**  
+   - Explicaciones de conceptos en distintos niveles de dificultad.  
+   - Guías de estudio o resúmenes temáticos.  
+
+2. **Generación de ejercicios**  
+   - Preguntas de opción múltiple.  
+   - Problemas prácticos con soluciones paso a paso.  
+
+3. **Evaluación**  
+   - Diseño de rúbricas claras y aplicables.  
+   - Retroalimentación automática de textos o respuestas.  
+
+4. **Redacción asistida**  
+   - Corrección de estilo y gramática en textos académicos.  
+   - Transformación de apuntes en documentos formales (LaTeX/Quarto).  
+
+
+
+## Ejemplos de prompts prácticos
+
+### 1. Explicaciones adaptadas
+```text
+Explica el concepto de "derivada" como si hablara con:
+1. Un estudiante de secundaria.
+2. Un estudiante universitario de ingeniería.
+3. Un colega docente de matemáticas.
+````
+
+### 2. Generación de ejercicios
+
+```text
+Genera 5 ejercicios de opción múltiple sobre condicionales en Python,
+cada uno con 4 alternativas y la respuesta correcta indicada.
+```
+
+### 3. Rúbricas de evaluación
+
+```text
+Diseña una rúbrica simple para evaluar un informe de laboratorio en educación secundaria,
+con criterios de claridad, estructura, redacción y análisis de resultados.
+```
+
+### 4. Escritura asistida
+
+```text
+Revisa el siguiente párrafo y propón una versión más clara y formal
+para un artículo académico en educación:
+
+[pegar texto aquí]
+```
+
+### 5. Apoyo en LaTeX/Quarto
+
+```text
+Transforma este enunciado de problema en un bloque LaTeX bien formateado,
+incluyendo ecuaciones y numeración:
+
+"Resolver la ecuación cuadrática x^2 + 5x + 6 = 0"
+```
+
+
+
+## Uso responsable de ChatGPT
+
+* **Verificar siempre**: la IA puede generar errores (“alucinaciones”).
+* **Cuidar la autoría**: no presentar como propio lo generado por IA sin revisión.
+* **Considerar sesgos**: la IA refleja limitaciones de sus datos de entrenamiento.
+* **Ética en el aula**: enseñar a estudiantes a usar IA como herramienta de apoyo, no como sustituto.
+
+
+
+## Actividad práctica
+
+1. Elige un tema de tu asignatura.
+2. Genera:
+
+   * Una **explicación adaptada** (ejemplo para secundaria y universidad).
+   * Una **pregunta de opción múltiple** con respuesta correcta.
+   * Una **rúbrica simple** para evaluar una tarea.
+3. Copia los resultados en un documento de Google Docs o en tu repositorio de curso.
+
+
+
+## Resultado esperado
+
+Al finalizar este módulo, tendrás:
+
+* Un **mini set de prompts docentes** listos para usar en tu práctica.
+* Material generado (explicaciones, ejercicios y rúbricas) adaptado a tu asignatura.
+* Una reflexión sobre cómo usar ChatGPT de forma ética y responsable.
+

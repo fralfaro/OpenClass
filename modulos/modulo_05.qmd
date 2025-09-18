@@ -1,0 +1,209 @@
+---
+title: "Módulo 5"
+subtitle: "Documentación y Presentaciones con Quarto"
+format:
+  html:
+    toc: true
+---
+
+# Documentación y Presentaciones con Quarto
+
+En este módulo exploraremos **Quarto** como una plataforma integral para la creación de materiales académicos.
+A diferencia de procesadores tradicionales (Word, PowerPoint), Quarto integra **texto, código y resultados** en un mismo flujo, lo que permite reproducibilidad, transparencia y evita duplicar esfuerzos.
+
+Con Quarto, un docente puede preparar **reportes, artículos, libros o presentaciones** en un solo entorno: el mismo código que produce un resultado también genera las tablas y gráficos que se incluyen en el documento.
+
+<img src="images/quarto.png" alt="Quarto" width="500"/>
+
+---
+
+## Objetivos de aprendizaje
+
+* Comprender qué es Quarto y cómo se relaciona con Markdown, LaTeX y lenguajes de programación.
+* Crear un documento reproducible con texto, código y gráficos.
+* Diseñar una presentación académica con reveal.js.
+* Personalizar formatos y estilos en Quarto.
+* Publicar materiales en línea mediante GitHub Pages.
+
+---
+
+## ¿Qué es Quarto y cómo funciona?
+
+Quarto es un **motor de publicación reproducible** que sigue tres pasos principales:
+
+1. **Escritura**: el autor redacta en un archivo `.qmd` (basado en Markdown).
+2. **Ejecución**: Quarto procesa los bloques de código (Python, R, Julia, ObservableJS, etc.) y guarda los resultados.
+3. **Renderizado**: el contenido se transforma en documentos **HTML, PDF, Word, libros o presentaciones**.
+
+Esto significa que un mismo archivo `.qmd` puede generar:
+
+* Un reporte en HTML para publicar en la web.
+* Un PDF académico listo para entregar.
+* Una presentación interactiva en reveal.js.
+
+---
+
+## Anatomía de un archivo `.qmd`
+
+Un archivo `.qmd` tiene tres partes principales:
+
+1. **Encabezado YAML**: metadatos del documento (título, autor, fecha, formato).
+2. **Texto en Markdown**: secciones, listas, tablas y párrafos.
+3. **Bloques de código ejecutable**: fragmentos en Python, R, Julia o SQL.
+
+Ejemplo mínimo:
+
+---
+
+title: "Ejemplo de reporte"
+author: "Nombre del docente"
+format: html
+------------
+
+# Introducción
+
+Texto en **Markdown**.
+
+## Cálculo en Python
+
+```{python}
+x = [1, 2, 3, 4, 5]
+sum(x)/len(x)
+```
+
+---
+
+## Ejemplo: Documento reproducible
+
+Archivo `reporte.qmd`:
+
+---
+
+title: "Reporte de Notas"
+author: "Nombre del docente"
+date: "2025-09-17"
+format: html
+------------
+
+# Datos de notas
+
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt
+
+data = {"Estudiante": ["Ana", "Luis", "Pedro", "Carla"],
+        "Nota1": [5.5, 6.0, 4.8, 6.2],
+        "Nota2": [6.0, 5.8, 5.0, 6.4]}
+
+df = pd.DataFrame(data)
+df["Promedio"] = df[["Nota1","Nota2"]].mean(axis=1)
+df
+```
+
+## Visualización
+
+```{python}
+df.plot(x="Estudiante", y="Promedio", kind="bar", legend=False)
+plt.title("Promedio de notas")
+plt.show()
+```
+
+Renderiza con:
+
+quarto render reporte.qmd
+
+Esto genera un HTML con tabla y gráfico directamente integrados.
+
+---
+
+## Ejemplo: Presentación con reveal.js
+
+Archivo `presentacion.qmd`:
+
+---
+
+title: "Presentación de Clase"
+author: "Nombre del docente"
+format: revealjs
+----------------
+
+# Bienvenida
+
+Introducción al curso y objetivos principales.
+
+---
+
+# Concepto clave
+
+La fórmula cuadrática:
+
+$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$
+
+---
+
+# Visualización en R
+
+```{r}
+estudiantes <- c("Ana", "Luis", "Pedro", "Carla")
+notas <- c(5.5, 6.0, 4.8, 6.2)
+barplot(notas, names.arg = estudiantes, col="lightblue")
+```
+
+La salida será una presentación interactiva con navegación por diapositivas.
+
+---
+
+## Personalización en Quarto
+
+* **Formatos múltiples**: basta con cambiar `format: html` por `pdf` o `docx` en el YAML.
+* **Temas y estilos**: reveal.js permite cambiar temas de diapositiva (`simple`, `night`, `sky`) y añadir transiciones.
+* **Parámetros**: se pueden crear reportes dinámicos con variables que cambien según la ejecución.
+
+Ejemplo de YAML con opciones personalizadas:
+
+format:
+revealjs:
+theme: simple
+transition: slide
+incremental: true
+
+---
+
+## Publicación en GitHub Pages
+
+1. Subir los archivos `.qmd` a un repositorio.
+2. Activar **GitHub Pages** desde `Settings > Pages`.
+3. Configurar la carpeta de publicación (`docs/` suele ser la más usada).
+4. El sitio estará disponible en:
+
+   [https://usuario.github.io/mi-curso-quarto/](https://usuario.github.io/mi-curso-quarto/)
+
+Esto convierte tus reportes y presentaciones en recursos accesibles públicamente.
+
+---
+
+## Casos de uso en docencia
+
+* **Reportes automáticos de evaluaciones**: generar gráficos y tablas de notas con un clic.
+* **Apuntes de clase**: materiales vivos que combinan teoría y ejemplos de código.
+* **Presentaciones interactivas**: diapositivas con código ejecutado en vivo.
+* **Libros de curso**: un repositorio completo que se transforma en un libro online.
+
+---
+
+## Actividad práctica
+
+1. Crea un `reporte.qmd` con datos ficticios de notas y un gráfico de barras.
+2. Crea una `presentacion.qmd` con tres secciones: introducción, concepto clave y visualización.
+3. Personaliza la presentación cambiando el tema y la transición.
+4. Publica ambos archivos en GitHub Pages.
+
+---
+
+## Resultado esperado
+
+* Documento reproducible con texto, código y gráficos.
+* Presentación reveal.js interactiva y personalizada.
+* Materiales publicados en GitHub Pages para acceso abierto.
+
+

@@ -1,0 +1,71 @@
+---
+title: "Módulo 0"
+subtitle: "Ecosistema de Herramientas Abiertas + IA"
+format:
+  html:
+    toc: true
+---
+
+# Ecosistema de Herramientas Abiertas + IA
+
+En este módulo introductorio exploraremos el **mapa general de herramientas** que utilizaremos durante el curso.  
+El objetivo es que los participantes comprendan cómo cada tecnología se conecta y qué lugar ocupa dentro de la práctica docente o la creación de contenidos.
+
+<img src="images/m00.svg" alt="tools" width="600"/>
+
+
+
+
+## Objetivos de aprendizaje
+
+- Conocer el ecosistema de herramientas abiertas que usaremos en el curso.  
+- Reconocer los beneficios de trabajar con software libre y plataformas colaborativas.  
+- Identificar cómo la **IA generativa (ChatGPT)** se integra en el flujo de trabajo docente.  
+
+
+
+## Mapa de herramientas
+
+| Categoría | Herramienta | Uso principal |
+|-----------|-------------|---------------|
+| **Ofimática** | Google Docs, Google Sheets, Google Slides | Redacción, cálculos básicos, presentaciones colaborativas |
+| **Programación en la nube** | Google Colab, RStudio Cloud | Notebooks interactivos para Python y R, sin instalación local |
+| **Gestión y repositorios** | Git + GitHub | Organización de materiales de clase, control de versiones y difusión |
+| **Redacción académica** | LaTeX (Overleaf / TeX Live) | Creación de artículos, guías y documentos académicos |
+| **Documentación reproducible** | Quarto | Reportes dinámicos, libros y presentaciones |
+| **Aplicaciones interactivas** | Streamlit (Python), Shiny (R) | Apps para simular, visualizar y experimentar en clases |
+| **Inteligencia Artificial** | ChatGPT | Generación de materiales, preguntas, rúbricas y escritura asistida |
+
+## Conexión entre herramientas
+
+1. **Docs, Sheets, Slides** → punto de partida accesible para todos.  
+2. **Colab/RStudio** → integración de programación con datos reales.  
+3. **GitHub** → repositorio central de todos los materiales.  
+4. **LaTeX y Quarto** → producción de documentos y presentaciones reproducibles.  
+5. **Streamlit/Shiny** → apps que hacen interactivo el aprendizaje.  
+6. **ChatGPT** → apoyo transversal en redacción, generación de ideas y creación de ejercicios.  
+
+
+
+## Actividad práctica
+
+1. Piensa en un **curso o taller** que impartes (o te gustaría impartir).  
+2. Haz una lista rápida:  
+   - ¿Qué material produces actualmente? (ej. guías PDF, PPT, ejercicios).  
+   - ¿Qué herramienta usas para cada uno?  
+3. Conecta esas herramientas con el **mapa del curso** y reflexiona:  
+   - ¿Qué podría mejorar con herramientas abiertas?  
+   - ¿Dónde la IA podría ahorrarte tiempo o aportar creatividad?  
+
+
+
+## Resultado esperado
+
+Al finalizar este módulo, tendrás un **mapa personal de uso de herramientas**, identificando qué partes de tu práctica docente pueden fortalecerse con:  
+
+- Herramientas colaborativas.  
+- Documentación reproducible.  
+- Aplicaciones interactivas.  
+- Inteligencia artificial.  
+
+

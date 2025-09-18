@@ -1,0 +1,149 @@
+---
+title: "Módulo 3"
+subtitle: "Git y GitHub como Aula Virtual Expandida"
+format:
+  html:
+    toc: true
+---
+
+# Git y GitHub como Aula Virtual Expandida
+
+En este módulo aprenderemos a utilizar **Git y GitHub** como herramientas para **organizar, versionar y compartir materiales educativos**.  
+La idea central es que cada docente cree su propio **repositorio de curso**, que funcione como un **aula virtual abierta y reproducible**, donde estudiantes y colegas puedan acceder a apuntes, actividades, notebooks y presentaciones en cualquier momento.  
+
+Git y GitHub nos permiten dar un paso más allá de los archivos guardados en un pendrive o en la nube: hablamos de una **historia de versiones**, un espacio colaborativo y una vitrina académica.  
+
+<img src="images/git_github.jpg" alt="GitHub" width="500"/>
+
+
+## Objetivos de aprendizaje
+
+Al finalizar este módulo podrás:  
+
+- Comprender los conceptos básicos de **control de versiones** con Git.  
+- Crear un repositorio en **GitHub** para organizar materiales de clase.  
+- Subir documentos, notebooks y presentaciones al repositorio.  
+- Gestionar cambios y mantener un historial claro de tu curso.  
+- Usar GitHub como una plataforma de **publicación y difusión de recursos educativos** (con GitHub Pages).  
+- Favorecer la **transparencia, reproducibilidad y colaboración** en el aula.  
+
+
+## Conceptos clave
+
+- **Repositorio** → carpeta organizada de archivos (local o en la nube) que contiene todo tu proyecto o curso.  
+- **Commit** → guardar cambios en el repositorio con un mensaje descriptivo, como un "historial" de lo que hiciste.  
+- **Push** → enviar los cambios desde tu computador (local) hacia el repositorio en GitHub (nube).  
+- **Pull** → traer cambios desde GitHub a tu computador para mantenerte actualizado.  
+- **Clone** → descargar/copiar un repositorio existente en tu máquina local.  
+- **Branch** → versiones paralelas de trabajo; en este curso trabajaremos solo con la rama principal (`main`).  
+- **README.md** → archivo principal que explica de qué se trata el repositorio (presentación del curso).  
+
+
+## ¿Por qué usar GitHub como aula virtual?
+
+- Permite **centralizar los materiales** en un solo lugar accesible para todos.  
+- Se pueden **versionar documentos**, viendo cómo evolucionan en el tiempo.  
+- Facilita el **trabajo colaborativo** entre docentes y ayudantes.  
+- Los estudiantes pueden **replicar y practicar** con el mismo código y actividades.  
+- GitHub Pages permite transformar tu repositorio en una **página web abierta** sin costo.  
+
+
+## Crear tu primer repositorio
+
+1. Ingresa a [GitHub](https://github.com) y crea una cuenta (si no la tienes).  
+2. Haz clic en **New Repository**.  
+3. Nombra tu repo, por ejemplo:  
+   - `curso-python-2025`  
+   - `matematicas-aplicadas`  
+4. Agrega una descripción breve (ejemplo: *"Materiales del curso de Matemáticas Aplicadas - UTFSM 2025"*).  
+5. Marca la opción **Public** (para que sea accesible a todos).  
+6. Selecciona la casilla **Add a README file**.  
+7. Haz clic en **Create Repository**.  
+
+👉 Ahora tienes tu aula virtual en GitHub: un espacio central para todo tu curso.  
+
+
+## Subir materiales a tu repositorio
+
+Hay dos formas principales:  
+
+### Opción 1: Subir desde la web  
+- Ingresa a tu repositorio en GitHub.  
+- Haz clic en **Add file → Upload files**.  
+- Arrastra tus documentos, notebooks y presentaciones.  
+- Escribe un mensaje de confirmación (ejemplo: *“Agregando materiales de la semana 1”*).  
+- Haz clic en **Commit changes**.  
+
+### Opción 2: Usar Git en tu computador  
+1. Instala [Git](https://git-scm.com/downloads).  
+2. Abre una terminal y escribe:  
+
+```bash
+git clone https://github.com/tuusuario/curso-python-2025.git
+cd curso-python-2025
+````
+
+3. Copia dentro de esta carpeta tus archivos del curso.
+4. Luego ejecuta:
+
+```bash
+git add .
+git commit -m "Agregando materiales iniciales"
+git push origin main
+```
+
+👉 Con esto los materiales ya estarán en GitHub.
+
+## Ejemplo de estructura de repositorio de curso
+
+```
+curso-python-2025/
+│
+├── README.md                # Presentación del curso
+├── clases/                  # Apuntes y presentaciones
+│   ├── clase_01.pdf
+│   ├── clase_02.pdf
+│
+├── notebooks/               # Actividades prácticas en Jupyter
+│   ├── intro_python.ipynb
+│   ├── funciones.ipynb
+│
+├── evaluaciones/            # Controles, tareas y proyectos
+│   ├── tarea_1.md
+│   ├── proyecto_final.pdf
+│
+└── recursos/                # Bibliografía, imágenes, datasets
+    ├── guia.pdf
+    ├── dataset.csv
+```
+
+## Publicar tu curso como página web (extra)
+
+Con **GitHub Pages** puedes convertir tu repositorio en una web sencilla:
+
+1. Ve a tu repositorio → **Settings → Pages**.
+2. En *Source* selecciona la rama `main` y carpeta `/ (root)`.
+3. Haz clic en **Save**.
+
+👉 Obtendrás un enlace tipo:
+`https://tuusuario.github.io/curso-python-2025/`
+
+Ideal para difundir tu curso a estudiantes y colegas.
+
+## Actividades prácticas
+
+1. Crea tu primer repositorio con un archivo `README.md` que describa tu curso.
+2. Sube un **documento PDF** y un **notebook Jupyter** al repositorio.
+3. Organiza una estructura de carpetas (clases, evaluaciones, recursos).
+4. Habilita GitHub Pages para tu repo y comparte el link con tus compañeros.
+
+## Resultado esperado
+
+Al finalizar este módulo tendrás:
+
+* Un repositorio de curso en GitHub.
+* Materiales organizados en carpetas.
+* Un README de presentación del curso.
+* Un enlace web para difundir tu curso mediante GitHub Pages.
+* La experiencia de usar Git como herramienta de control de versiones aplicada a la docencia.
+

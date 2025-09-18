@@ -1,0 +1,126 @@
+---
+title: "Módulo 1"
+subtitle: "Ofimática con Google Workspace"
+format:
+  html:
+    toc: true
+---
+
+# Ofimática con Google Workspace
+
+En este módulo aprenderemos a utilizar **Google Docs, Sheets, Slides, Forms y Meet** como herramientas básicas de creación y colaboración.  
+El objetivo es que cada participante pueda **gestionar materiales docentes** de manera sencilla y compartida en la nube.
+
+<img src="images/google_ws.png" alt="Google Workspace" width="300"/>    
+
+
+
+
+## Objetivos de aprendizaje
+
+- Usar **Google Docs** para redactar documentos colaborativos.  
+- Manejar **Google Sheets** para organizar y analizar datos educativos simples.  
+- Diseñar presentaciones en **Google Slides** para clases o talleres.  
+- Aplicar **Google Forms** para crear encuestas y formularios de retroalimentación.  
+- Realizar reuniones y clases virtuales con **Google Meet**.  
+- Comprender la importancia de la **colaboración en tiempo real** en el aula.  
+
+
+## Herramientas principales
+
+- [Google Docs](https://docs.google.com/)  → Redacción colaborativa de guías, apuntes y actas.  
+- [Google Sheets](https://sheets.google.com/)  → Registro de notas, asistencia y análisis básico de datos.
+- [Google Slides](https://slides.google.com/)  → Creación de presentaciones dinámicas y compartidas.  
+- [Google Forms](https://forms.google.com/)  → Encuestas y formularios para recopilar información. 
+- [Google Drive](https://drive.google.com/)  → Reuniones y clases virtuales con video y chat integrado.  
+- [Google Meet](https://meet.google.com/)  → Organización de materiales y control de accesos (ver, comentar, editar).  
+
+
+
+
+## Google Docs
+
+- Redacción colaborativa (varios editores en simultáneo).  
+- Comentarios y sugerencias para revisión entre pares.  
+- Plantillas para crear actas de reunión, guías de ejercicios o manuales.  
+
+👉 **Actividad práctica:**  
+1. Crea un documento en Google Docs llamado *“Guía de Clase - [Tu nombre]”*.  
+2. Comparte el documento con un compañero del curso con permisos de **comentario**.  
+3. Agrega un título, un párrafo introductorio y una sección con **3 preguntas** para tus estudiantes.  
+
+
+## Google Sheets
+
+- Registro de notas y asistencia.  
+- Cálculos básicos con fórmulas (`=PROMEDIO`, `=MAX`, `=MIN`).  
+- Gráficos sencillos para visualizar resultados de encuestas o evaluaciones.  
+
+👉 **Actividad práctica:**  
+1. Crea una planilla en Google Sheets llamada *“Notas Curso [Tu nombre]”*.  
+2. Ingresa 10 estudiantes ficticios con sus calificaciones en 3 actividades.  
+3. Calcula el promedio de cada estudiante usando `=PROMEDIO()`.  
+4. Genera un gráfico de barras mostrando los resultados.  
+
+
+## Google Slides
+
+- Creación de presentaciones visuales y dinámicas.  
+- Inserción de imágenes, videos y enlaces.  
+- Uso de temas y transiciones para mejorar la narrativa.  
+
+👉 **Actividad práctica:**  
+1. Crea una presentación en Google Slides llamada *“Presentación Curso [Tu nombre]”*.  
+2. Diseña **3 diapositivas**:  
+   - Introducción a tu asignatura/taller.  
+   - Un concepto clave con imagen o gráfico.  
+   - Una conclusión con preguntas para discusión.  
+3. Comparte la presentación con un compañero y pídele que agregue un comentario en una diapositiva.  
+
+
+## Google Forms
+
+- Creación de encuestas y formularios en línea.  
+- Recopilación automática de respuestas en **Google Sheets**.  
+- Uso de cuestionarios para autoevaluaciones.  
+
+👉 **Actividad práctica:**  
+1. Crea un formulario en Google Forms titulado *“Encuesta de Retroalimentación - [Tu nombre]”*.  
+2. Incluye preguntas de opción múltiple, escala de satisfacción y una abierta.  
+3. Envía el link a tus compañeros y revisa las respuestas en la pestaña **Respuestas**.  
+
+
+## Google Meet
+
+- Organización de videollamadas y clases virtuales.  
+- Compartir pantalla y grabar sesiones.  
+- Chat en vivo para resolver dudas.  
+
+👉 **Actividad práctica:**  
+1. Programa una reunión en [Google Meet](https://meet.google.com/) titulada *“Clase de prueba - [Tu nombre]”*.  
+2. Invita a un compañero para probar las funciones de **chat y compartir pantalla**.  
+3. Haz una mini-presentación usando tu archivo de Google Slides.  
+
+
+## Trabajo en Google Drive
+
+- Cómo organizar carpetas de curso en Drive.  
+- Control de accesos: **ver, comentar, editar**.  
+- Ejemplo: Carpeta compartida con **Docs, Sheets, Slides y Forms** del curso.  
+
+👉 **Actividad práctica final:**  
+1. Crea una carpeta en Google Drive llamada *“OpenClass - [Tu nombre]”*.  
+2. Guarda allí tus 4 archivos (Docs, Sheets, Slides y Forms).  
+3. Comparte la carpeta con el profesor/a y compañeros con permisos de **visualización**.  
+
+
+## Resultado esperado
+
+Al finalizar este módulo tendrás un **kit docente básico en Google Workspace** compuesto por:  
+
+- Documento en Google Docs.  
+- Planilla en Google Sheets con notas y gráfico.  
+- Presentación en Google Slides.  
+- Formulario en Google Forms con respuestas.  
+- Reunión de práctica en Google Meet.  
+- Carpeta organizada en Google Drive para compartir con tus estudiantes.  

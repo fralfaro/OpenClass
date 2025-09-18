@@ -1,0 +1,156 @@
+---
+title: "Módulo 6"
+subtitle: "Aplicaciones Interactivas (Streamlit / Shiny)"
+format:
+  html:
+    toc: true 
+---
+
+# Aplicaciones Interactivas (Streamlit / Shiny)
+
+En este módulo exploraremos cómo crear **aplicaciones interactivas** que permitan a los estudiantes experimentar con conceptos de manera práctica y visual.
+Trabajaremos con **Streamlit (Python)** y **Shiny (R)** para desarrollar aplicaciones sencillas que se pueden aplicar directamente en contextos educativos.
+
+
+
+## Objetivos de aprendizaje
+
+* Comprender qué son las aplicaciones interactivas y su relevancia en docencia.
+* Crear una aplicación básica con **Streamlit** en Python.
+* Crear una aplicación básica con **Shiny** en R.
+* Identificar ejemplos de uso educativo como simuladores, calculadoras y tableros de datos.
+
+
+
+## Herramientas principales
+
+* **Streamlit**: framework en Python para construir aplicaciones de datos de forma rápida y accesible.
+* **Shiny**: framework en R para crear aplicaciones interactivas y dashboards sin necesidad de lenguajes adicionales.
+
+
+
+## Ejemplo en Streamlit (Python)
+
+Guarda este código como `app.py` y ejecútalo con `streamlit run app.py`.
+
+```python
+import streamlit as st
+import pandas as pd
+
+st.title("Calculadora de Promedios")
+
+# Ingreso de datos
+st.write("Ingresa las notas de tus estudiantes:")
+
+estudiantes = ["Ana", "Luis", "Pedro", "Carla"]
+notas = {}
+
+for estudiante in estudiantes:
+    notas[estudiante] = st.number_input(f"Nota de {estudiante}", 1.0, 7.0, 5.5)
+
+# Crear DataFrame
+df = pd.DataFrame(list(notas.items()), columns=["Estudiante", "Nota"])
+
+# Calcular promedio
+promedio = df["Nota"].mean()
+
+st.subheader("Resultados")
+st.dataframe(df)
+st.write(f"Promedio del curso: {promedio:.2f}")
+
+if promedio >= 5.5:
+    st.success("El curso aprueba")
+else:
+    st.error("El curso no aprueba")
+```
+
+Esta aplicación permite ingresar notas manualmente y calcular el promedio del curso en tiempo real.
+
+
+
+## Ejemplo en Shiny (R)
+
+Guarda este código como `app.R` y ejecútalo en RStudio con `runApp("app.R")`.
+
+```r
+library(shiny)
+
+ui <- fluidPage(
+  titlePanel("Calculadora de Promedios"),
+  
+  sidebarLayout(
+    sidebarPanel(
+      numericInput("ana", "Nota de Ana:", 5.5, min = 1, max = 7, step = 0.1),
+      numericInput("luis", "Nota de Luis:", 6.0, min = 1, max = 7, step = 0.1),
+      numericInput("pedro", "Nota de Pedro:", 4.8, min = 1, max = 7, step = 0.1),
+      numericInput("carla", "Nota de Carla:", 6.2, min = 1, max = 7, step = 0.1)
+    ),
+    
+    mainPanel(
+      tableOutput("tabla"),
+      textOutput("promedio"),
+      textOutput("estado")
+    )
+  )
+)
+
+server <- function(input, output) {
+  output$tabla <- renderTable({
+    data.frame(
+      Estudiante = c("Ana", "Luis", "Pedro", "Carla"),
+      Nota = c(input$ana, input$luis, input$pedro, input$carla)
+    )
+  })
+  
+  output$promedio <- renderText({
+    notas <- c(input$ana, input$luis, input$pedro, input$carla)
+    paste("Promedio del curso:", round(mean(notas), 2))
+  })
+  
+  output$estado <- renderText({
+    notas <- c(input$ana, input$luis, input$pedro, input$carla)
+    if (mean(notas) >= 5.5) {
+      "El curso aprueba"
+    } else {
+      "El curso no aprueba"
+    }
+  })
+}
+
+shinyApp(ui = ui, server = server)
+```
+
+Esta aplicación reproduce la misma lógica, pero implementada en R con el framework Shiny.
+
+
+
+## Usos educativos de aplicaciones interactivas
+
+Las aplicaciones construidas con Streamlit o Shiny pueden aplicarse en múltiples escenarios de enseñanza:
+
+* **Simuladores de probabilidad y estadística** para experimentar con distribuciones y resultados.
+* **Visualización de funciones matemáticas** de manera dinámica.
+* **Calculadoras de notas** o **rúbricas interactivas de evaluación**.
+* **Exploración de datos** en encuestas, proyectos de investigación o ejercicios prácticos en clase.
+
+
+
+## Actividad práctica
+
+1. Elige una de las dos herramientas (Streamlit o Shiny) según el lenguaje que manejes.
+2. Crea una aplicación sencilla que permita:
+
+   * Ingresar datos de al menos tres estudiantes.
+   * Calcular un promedio de notas.
+   * Mostrar si el grupo aprueba o no.
+3. Comparte tu aplicación con tu grupo mediante un servicio en la nube como [Streamlit Cloud](https://streamlit.io/cloud) o [Shinyapps.io](https://www.shinyapps.io).
+
+
+
+## Resultado esperado
+
+Al finalizar este módulo, tendrás una **aplicación educativa interactiva** capaz de:
+
+* Recibir datos de entrada del usuario.
+* Realizar cálculos básicos.
+* Mostrar resultados y visualizaciones en tiempo real.

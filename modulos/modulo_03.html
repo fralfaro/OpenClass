@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.554">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>OpenClass: Herramientas Abiertas e IA - Módulo 3</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../modulos/modulo_04.html" rel="next">
+<link href="../modulos/modulo_02.html" rel="prev">
+<link href="../images/icon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "Sin resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../modulos/modulo_03.html"><span class="chapter-title">Módulo 3</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">OpenClass: Herramientas Abiertas e IA</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/fralfaro/OpenClass" title="Ejecutar el código" class="quarto-navigation-tool px-1" aria-label="Ejecutar el código"><i class="bi bi-github"></i></a>
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo oscuro"><i class="bi"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Buscar"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">🏠 Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modulos/modulo_00.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Módulo 0</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modulos/modulo_01.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Módulo 1</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modulos/modulo_02.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Módulo 2</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modulos/modulo_03.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Módulo 3</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modulos/modulo_04.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Módulo 4</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modulos/modulo_05.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Módulo 5</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modulos/modulo_06.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Módulo 6</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../modulos/modulo_07.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Módulo 7</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#git-y-github-como-aula-virtual-expandida" id="toc-git-y-github-como-aula-virtual-expandida" class="nav-link active" data-scroll-target="#git-y-github-como-aula-virtual-expandida">Git y GitHub como Aula Virtual Expandida</a>
+  <ul class="collapse">
+  <li><a href="#objetivos-de-aprendizaje" id="toc-objetivos-de-aprendizaje" class="nav-link" data-scroll-target="#objetivos-de-aprendizaje">Objetivos de aprendizaje</a></li>
+  <li><a href="#conceptos-clave" id="toc-conceptos-clave" class="nav-link" data-scroll-target="#conceptos-clave">Conceptos clave</a></li>
+  <li><a href="#por-qué-usar-github-como-aula-virtual" id="toc-por-qué-usar-github-como-aula-virtual" class="nav-link" data-scroll-target="#por-qué-usar-github-como-aula-virtual">¿Por qué usar GitHub como aula virtual?</a></li>
+  <li><a href="#crear-tu-primer-repositorio" id="toc-crear-tu-primer-repositorio" class="nav-link" data-scroll-target="#crear-tu-primer-repositorio">Crear tu primer repositorio</a></li>
+  <li><a href="#subir-materiales-a-tu-repositorio" id="toc-subir-materiales-a-tu-repositorio" class="nav-link" data-scroll-target="#subir-materiales-a-tu-repositorio">Subir materiales a tu repositorio</a>
+  <ul class="collapse">
+  <li><a href="#opción-1-subir-desde-la-web" id="toc-opción-1-subir-desde-la-web" class="nav-link" data-scroll-target="#opción-1-subir-desde-la-web">Opción 1: Subir desde la web</a></li>
+  <li><a href="#opción-2-usar-git-en-tu-computador" id="toc-opción-2-usar-git-en-tu-computador" class="nav-link" data-scroll-target="#opción-2-usar-git-en-tu-computador">Opción 2: Usar Git en tu computador</a></li>
+  </ul></li>
+  <li><a href="#ejemplo-de-estructura-de-repositorio-de-curso" id="toc-ejemplo-de-estructura-de-repositorio-de-curso" class="nav-link" data-scroll-target="#ejemplo-de-estructura-de-repositorio-de-curso">Ejemplo de estructura de repositorio de curso</a></li>
+  <li><a href="#publicar-tu-curso-como-página-web-extra" id="toc-publicar-tu-curso-como-página-web-extra" class="nav-link" data-scroll-target="#publicar-tu-curso-como-página-web-extra">Publicar tu curso como página web (extra)</a></li>
+  <li><a href="#actividades-prácticas" id="toc-actividades-prácticas" class="nav-link" data-scroll-target="#actividades-prácticas">Actividades prácticas</a></li>
+  <li><a href="#resultado-esperado" id="toc-resultado-esperado" class="nav-link" data-scroll-target="#resultado-esperado">Resultado esperado</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-body" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Módulo 3</span></h1>
+<p class="subtitle lead">Git y GitHub como Aula Virtual Expandida</p>
+</div>
+
+
+
+<div class="quarto-title-meta column-body">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="git-y-github-como-aula-virtual-expandida" class="level1">
+<h1>Git y GitHub como Aula Virtual Expandida</h1>
+<p>En este módulo aprenderemos a utilizar <strong>Git y GitHub</strong> como herramientas para <strong>organizar, versionar y compartir materiales educativos</strong>.<br>
+La idea central es que cada docente cree su propio <strong>repositorio de curso</strong>, que funcione como un <strong>aula virtual abierta y reproducible</strong>, donde estudiantes y colegas puedan acceder a apuntes, actividades, notebooks y presentaciones en cualquier momento.</p>
+<p>Git y GitHub nos permiten dar un paso más allá de los archivos guardados en un pendrive o en la nube: hablamos de una <strong>historia de versiones</strong>, un espacio colaborativo y una vitrina académica.</p>
+<p><img src="images/git_github.jpg" alt="GitHub" width="500"></p>
+<section id="objetivos-de-aprendizaje" class="level2">
+<h2 class="anchored" data-anchor-id="objetivos-de-aprendizaje">Objetivos de aprendizaje</h2>
+<p>Al finalizar este módulo podrás:</p>
+<ul>
+<li>Comprender los conceptos básicos de <strong>control de versiones</strong> con Git.<br>
+</li>
+<li>Crear un repositorio en <strong>GitHub</strong> para organizar materiales de clase.<br>
+</li>
+<li>Subir documentos, notebooks y presentaciones al repositorio.<br>
+</li>
+<li>Gestionar cambios y mantener un historial claro de tu curso.<br>
+</li>
+<li>Usar GitHub como una plataforma de <strong>publicación y difusión de recursos educativos</strong> (con GitHub Pages).<br>
+</li>
+<li>Favorecer la <strong>transparencia, reproducibilidad y colaboración</strong> en el aula.</li>
+</ul>
+</section>
+<section id="conceptos-clave" class="level2">
+<h2 class="anchored" data-anchor-id="conceptos-clave">Conceptos clave</h2>
+<ul>
+<li><strong>Repositorio</strong> → carpeta organizada de archivos (local o en la nube) que contiene todo tu proyecto o curso.<br>
+</li>
+<li><strong>Commit</strong> → guardar cambios en el repositorio con un mensaje descriptivo, como un “historial” de lo que hiciste.<br>
+</li>
+<li><strong>Push</strong> → enviar los cambios desde tu computador (local) hacia el repositorio en GitHub (nube).<br>
+</li>
+<li><strong>Pull</strong> → traer cambios desde GitHub a tu computador para mantenerte actualizado.<br>
+</li>
+<li><strong>Clone</strong> → descargar/copiar un repositorio existente en tu máquina local.<br>
+</li>
+<li><strong>Branch</strong> → versiones paralelas de trabajo; en este curso trabajaremos solo con la rama principal (<code>main</code>).<br>
+</li>
+<li><strong>README.md</strong> → archivo principal que explica de qué se trata el repositorio (presentación del curso).</li>
+</ul>
+</section>
+<section id="por-qué-usar-github-como-aula-virtual" class="level2">
+<h2 class="anchored" data-anchor-id="por-qué-usar-github-como-aula-virtual">¿Por qué usar GitHub como aula virtual?</h2>
+<ul>
+<li>Permite <strong>centralizar los materiales</strong> en un solo lugar accesible para todos.<br>
+</li>
+<li>Se pueden <strong>versionar documentos</strong>, viendo cómo evolucionan en el tiempo.<br>
+</li>
+<li>Facilita el <strong>trabajo colaborativo</strong> entre docentes y ayudantes.<br>
+</li>
+<li>Los estudiantes pueden <strong>replicar y practicar</strong> con el mismo código y actividades.<br>
+</li>
+<li>GitHub Pages permite transformar tu repositorio en una <strong>página web abierta</strong> sin costo.</li>
+</ul>
+</section>
+<section id="crear-tu-primer-repositorio" class="level2">
+<h2 class="anchored" data-anchor-id="crear-tu-primer-repositorio">Crear tu primer repositorio</h2>
+<ol type="1">
+<li>Ingresa a <a href="https://github.com">GitHub</a> y crea una cuenta (si no la tienes).<br>
+</li>
+<li>Haz clic en <strong>New Repository</strong>.<br>
+</li>
+<li>Nombra tu repo, por ejemplo:
+<ul>
+<li><code>curso-python-2025</code><br>
+</li>
+<li><code>matematicas-aplicadas</code><br>
+</li>
+</ul></li>
+<li>Agrega una descripción breve (ejemplo: <em>“Materiales del curso de Matemáticas Aplicadas - UTFSM 2025”</em>).<br>
+</li>
+<li>Marca la opción <strong>Public</strong> (para que sea accesible a todos).<br>
+</li>
+<li>Selecciona la casilla <strong>Add a README file</strong>.<br>
+</li>
+<li>Haz clic en <strong>Create Repository</strong>.</li>
+</ol>
+<p>👉 Ahora tienes tu aula virtual en GitHub: un espacio central para todo tu curso.</p>
+</section>
+<section id="subir-materiales-a-tu-repositorio" class="level2">
+<h2 class="anchored" data-anchor-id="subir-materiales-a-tu-repositorio">Subir materiales a tu repositorio</h2>
+<p>Hay dos formas principales:</p>
+<section id="opción-1-subir-desde-la-web" class="level3">
+<h3 class="anchored" data-anchor-id="opción-1-subir-desde-la-web">Opción 1: Subir desde la web</h3>
+<ul>
+<li>Ingresa a tu repositorio en GitHub.<br>
+</li>
+<li>Haz clic en <strong>Add file → Upload files</strong>.<br>
+</li>
+<li>Arrastra tus documentos, notebooks y presentaciones.<br>
+</li>
+<li>Escribe un mensaje de confirmación (ejemplo: <em>“Agregando materiales de la semana 1”</em>).<br>
+</li>
+<li>Haz clic en <strong>Commit changes</strong>.</li>
+</ul>
+</section>
+<section id="opción-2-usar-git-en-tu-computador" class="level3">
+<h3 class="anchored" data-anchor-id="opción-2-usar-git-en-tu-computador">Opción 2: Usar Git en tu computador</h3>
+<ol type="1">
+<li>Instala <a href="https://git-scm.com/downloads">Git</a>.<br>
+</li>
+<li>Abre una terminal y escribe:</li>
+</ol>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/tuusuario/curso-python-2025.git</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> curso-python-2025</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="3" type="1">
+<li>Copia dentro de esta carpeta tus archivos del curso.</li>
+<li>Luego ejecuta:</li>
+</ol>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Agregando materiales iniciales"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin main</span></code><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>👉 Con esto los materiales ya estarán en GitHub.</p>
+</section>
+</section>
+<section id="ejemplo-de-estructura-de-repositorio-de-curso" class="level2">
+<h2 class="anchored" data-anchor-id="ejemplo-de-estructura-de-repositorio-de-curso">Ejemplo de estructura de repositorio de curso</h2>
+<pre><code>curso-python-2025/
+│
+├── README.md                # Presentación del curso
+├── clases/                  # Apuntes y presentaciones
+│   ├── clase_01.pdf
+│   ├── clase_02.pdf
+│
+├── notebooks/               # Actividades prácticas en Jupyter
+│   ├── intro_python.ipynb
+│   ├── funciones.ipynb
+│
+├── evaluaciones/            # Controles, tareas y proyectos
+│   ├── tarea_1.md
+│   ├── proyecto_final.pdf
+│
+└── recursos/                # Bibliografía, imágenes, datasets
+    ├── guia.pdf
+    ├── dataset.csv</code></pre>
+</section>
+<section id="publicar-tu-curso-como-página-web-extra" class="level2">
+<h2 class="anchored" data-anchor-id="publicar-tu-curso-como-página-web-extra">Publicar tu curso como página web (extra)</h2>
+<p>Con <strong>GitHub Pages</strong> puedes convertir tu repositorio en una web sencilla:</p>
+<ol type="1">
+<li>Ve a tu repositorio → <strong>Settings → Pages</strong>.</li>
+<li>En <em>Source</em> selecciona la rama <code>main</code> y carpeta <code>/ (root)</code>.</li>
+<li>Haz clic en <strong>Save</strong>.</li>
+</ol>
+<p>👉 Obtendrás un enlace tipo: <code>https://tuusuario.github.io/curso-python-2025/</code></p>
+<p>Ideal para difundir tu curso a estudiantes y colegas.</p>
+</section>
+<section id="actividades-prácticas" class="level2">
+<h2 class="anchored" data-anchor-id="actividades-prácticas">Actividades prácticas</h2>
+<ol type="1">
+<li>Crea tu primer repositorio con un archivo <code>README.md</code> que describa tu curso.</li>
+<li>Sube un <strong>documento PDF</strong> y un <strong>notebook Jupyter</strong> al repositorio.</li>
+<li>Organiza una estructura de carpetas (clases, evaluaciones, recursos).</li>
+<li>Habilita GitHub Pages para tu repo y comparte el link con tus compañeros.</li>
+</ol>
+</section>
+<section id="resultado-esperado" class="level2">
+<h2 class="anchored" data-anchor-id="resultado-esperado">Resultado esperado</h2>
+<p>Al finalizar este módulo tendrás:</p>
+<ul>
+<li>Un repositorio de curso en GitHub.</li>
+<li>Materiales organizados en carpetas.</li>
+<li>Un README de presentación del curso.</li>
+<li>Un enlace web para difundir tu curso mediante GitHub Pages.</li>
+<li>La experiencia de usar Git como herramienta de control de versiones aplicada a la docencia.</li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copiado");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copiado");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation column-body">
+  <div class="nav-page nav-page-previous">
+      <a href="../modulos/modulo_02.html" class="pagination-link" aria-label="Módulo 2">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Módulo 2</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../modulos/modulo_04.html" class="pagination-link" aria-label="Módulo 4">
+        <span class="nav-page-text"><span class="chapter-title">Módulo 4</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

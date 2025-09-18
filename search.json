@@ -1,0 +1,782 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "OpenClass: Herramientas Abiertas e IA",
+    "section": "",
+    "text": "🏠 Home",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>🏠 Home</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#descripción",
+    "href": "index.html#descripción",
+    "title": "OpenClass: Herramientas Abiertas e IA",
+    "section": "🎯 Descripción",
+    "text": "🎯 Descripción\nOpenClass es un curso diseñado para docentes, capacitadores y personas que quieran compartir conocimiento, entregando competencias prácticas en herramientas abiertas y de inteligencia artificial.\nEl objetivo es que cada participante pueda crear, publicar y difundir materiales educativos o de divulgación de manera sencilla, reproducible y colaborativa.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>🏠 Home</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#contenido-del-curso",
+    "href": "index.html#contenido-del-curso",
+    "title": "OpenClass: Herramientas Abiertas e IA",
+    "section": "🗂️ Contenido del curso",
+    "text": "🗂️ Contenido del curso\n\n\n\n\n\n\n\n\nMódulo\nTítulo\nContenido\n\n\n\n\n0\nEcosistema de Herramientas Abiertas + IA\n- Introducción general al curso.- Mapa de herramientas: Google Workspace, GitHub, Quarto, LaTeX, Streamlit, ChatGPT.\n\n\n1\nOfimática Colaborativa (Google Workspace)\n- Google Docs, Sheets y Slides.- Trabajo en equipo y gestión de recursos en la nube.\n\n\n2\nChatGPT en la Docencia\n- Creación de materiales y actividades.- Generación de evaluaciones y rúbricas.- Escritura asistida y uso ético de la IA.\n\n\n3\nPrimeros pasos en la nube (Colab / RStudio Cloud)\n- Notebooks colaborativos en Python y R.- Ejemplos con datos educativos.\n\n\n4\nProgramación básica aplicada a la docencia\n- Python/R para análisis de notas, encuestas y gráficos sencillos.\n\n\n5\nGit y GitHub como aula virtual expandida\n- Crear repositorios de clase.- Publicar y organizar materiales abiertos.\n\n\n6\nRedacción académica con LaTeX (Overleaf + local)\n- Documentos académicos y guías docentes.- Bibliografía, figuras y plantillas.\n\n\n7\nDocumentación y Presentaciones con Quarto\n- Reportes reproducibles.- Publicación de presentaciones y sitios web de curso.\n\n\n8\nAplicaciones Interactivas (Streamlit / Shiny)\n- Creación de apps sencillas para enseñanza y divulgación.\n\n\n9\nData Storytelling\n- Principios de narrativa visual.- Presentaciones impactantes con datos.\n\n\n10\nDifusión y Licencias Abiertas (Optativo)\n- Creative Commons.- Publicación en Zenodo / OSF / GitHub Pages.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>🏠 Home</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#proyecto-final",
+    "href": "index.html#proyecto-final",
+    "title": "OpenClass: Herramientas Abiertas e IA",
+    "section": "🌟 Proyecto Final",
+    "text": "🌟 Proyecto Final\nCada participante entrega un Kit Docente Reproducible, que incluye:\n- Carpeta en Google Drive (Docs, Sheets, Slides).\n- Documento de prompts aplicados a su asignatura.\n- Documento en LaTeX o Quarto.\n- Repositorio en GitHub con materiales de curso.\n- Mini app en Streamlit o Shiny.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>🏠 Home</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#público-objetivo",
+    "href": "index.html#público-objetivo",
+    "title": "OpenClass: Herramientas Abiertas e IA",
+    "section": "👥 Público objetivo",
+    "text": "👥 Público objetivo\n\nDocentes que desean modernizar sus clases.\n\nCapacitadores o talleristas que quieran estructurar y compartir recursos.\n\nInvestigadores y divulgadores que busquen publicar material de manera abierta.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>🏠 Home</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#herramientas-principales",
+    "href": "index.html#herramientas-principales",
+    "title": "OpenClass: Herramientas Abiertas e IA",
+    "section": "🛠️ Herramientas principales",
+    "text": "🛠️ Herramientas principales\n\nGoogle Workspace: Docs, Sheets, Slides, Colab.\n\nGitHub: repositorios de curso y materiales.\n\nQuarto & LaTeX (Overleaf / TeX Live): reportes, guías y artículos académicos.\n\nStreamlit / Shiny: apps interactivas.\n\nChatGPT: generación de materiales, ejercicios y escritura asistida.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>🏠 Home</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_00.html",
+    "href": "modulos/modulo_00.html",
+    "title": "Módulo 0",
+    "section": "",
+    "text": "Ecosistema de Herramientas Abiertas + IA\nEn este módulo introductorio exploraremos el mapa general de herramientas que utilizaremos durante el curso.\nEl objetivo es que los participantes comprendan cómo cada tecnología se conecta y qué lugar ocupa dentro de la práctica docente o la creación de contenidos.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Módulo 0</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_00.html#objetivos-de-aprendizaje",
+    "href": "modulos/modulo_00.html#objetivos-de-aprendizaje",
+    "title": "Módulo 0",
+    "section": "Objetivos de aprendizaje",
+    "text": "Objetivos de aprendizaje\n\nConocer el ecosistema de herramientas abiertas que usaremos en el curso.\n\nReconocer los beneficios de trabajar con software libre y plataformas colaborativas.\n\nIdentificar cómo la IA generativa (ChatGPT) se integra en el flujo de trabajo docente.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Módulo 0</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_00.html#mapa-de-herramientas",
+    "href": "modulos/modulo_00.html#mapa-de-herramientas",
+    "title": "Módulo 0",
+    "section": "Mapa de herramientas",
+    "text": "Mapa de herramientas\n\n\n\n\n\n\n\n\nCategoría\nHerramienta\nUso principal\n\n\n\n\nOfimática\nGoogle Docs, Google Sheets, Google Slides\nRedacción, cálculos básicos, presentaciones colaborativas\n\n\nProgramación en la nube\nGoogle Colab, RStudio Cloud\nNotebooks interactivos para Python y R, sin instalación local\n\n\nGestión y repositorios\nGit + GitHub\nOrganización de materiales de clase, control de versiones y difusión\n\n\nRedacción académica\nLaTeX (Overleaf / TeX Live)\nCreación de artículos, guías y documentos académicos\n\n\nDocumentación reproducible\nQuarto\nReportes dinámicos, libros y presentaciones\n\n\nAplicaciones interactivas\nStreamlit (Python), Shiny (R)\nApps para simular, visualizar y experimentar en clases\n\n\nInteligencia Artificial\nChatGPT\nGeneración de materiales, preguntas, rúbricas y escritura asistida",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Módulo 0</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_00.html#conexión-entre-herramientas",
+    "href": "modulos/modulo_00.html#conexión-entre-herramientas",
+    "title": "Módulo 0",
+    "section": "Conexión entre herramientas",
+    "text": "Conexión entre herramientas\n\nDocs, Sheets, Slides → punto de partida accesible para todos.\n\nColab/RStudio → integración de programación con datos reales.\n\nGitHub → repositorio central de todos los materiales.\n\nLaTeX y Quarto → producción de documentos y presentaciones reproducibles.\n\nStreamlit/Shiny → apps que hacen interactivo el aprendizaje.\n\nChatGPT → apoyo transversal en redacción, generación de ideas y creación de ejercicios.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Módulo 0</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_00.html#actividad-práctica",
+    "href": "modulos/modulo_00.html#actividad-práctica",
+    "title": "Módulo 0",
+    "section": "Actividad práctica",
+    "text": "Actividad práctica\n\nPiensa en un curso o taller que impartes (o te gustaría impartir).\n\nHaz una lista rápida:\n\n¿Qué material produces actualmente? (ej. guías PDF, PPT, ejercicios).\n\n¿Qué herramienta usas para cada uno?\n\n\nConecta esas herramientas con el mapa del curso y reflexiona:\n\n¿Qué podría mejorar con herramientas abiertas?\n\n¿Dónde la IA podría ahorrarte tiempo o aportar creatividad?",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Módulo 0</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_00.html#resultado-esperado",
+    "href": "modulos/modulo_00.html#resultado-esperado",
+    "title": "Módulo 0",
+    "section": "Resultado esperado",
+    "text": "Resultado esperado\nAl finalizar este módulo, tendrás un mapa personal de uso de herramientas, identificando qué partes de tu práctica docente pueden fortalecerse con:\n\nHerramientas colaborativas.\n\nDocumentación reproducible.\n\nAplicaciones interactivas.\n\nInteligencia artificial.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Módulo 0</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_01.html",
+    "href": "modulos/modulo_01.html",
+    "title": "Módulo 1",
+    "section": "",
+    "text": "Ofimática con Google Workspace\nEn este módulo aprenderemos a utilizar Google Docs, Sheets, Slides, Forms y Meet como herramientas básicas de creación y colaboración.\nEl objetivo es que cada participante pueda gestionar materiales docentes de manera sencilla y compartida en la nube.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Módulo 1</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_01.html#objetivos-de-aprendizaje",
+    "href": "modulos/modulo_01.html#objetivos-de-aprendizaje",
+    "title": "Módulo 1",
+    "section": "Objetivos de aprendizaje",
+    "text": "Objetivos de aprendizaje\n\nUsar Google Docs para redactar documentos colaborativos.\n\nManejar Google Sheets para organizar y analizar datos educativos simples.\n\nDiseñar presentaciones en Google Slides para clases o talleres.\n\nAplicar Google Forms para crear encuestas y formularios de retroalimentación.\n\nRealizar reuniones y clases virtuales con Google Meet.\n\nComprender la importancia de la colaboración en tiempo real en el aula.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Módulo 1</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_01.html#herramientas-principales",
+    "href": "modulos/modulo_01.html#herramientas-principales",
+    "title": "Módulo 1",
+    "section": "Herramientas principales",
+    "text": "Herramientas principales\n\nGoogle Docs → Redacción colaborativa de guías, apuntes y actas.\n\nGoogle Sheets → Registro de notas, asistencia y análisis básico de datos.\nGoogle Slides → Creación de presentaciones dinámicas y compartidas.\n\nGoogle Forms → Encuestas y formularios para recopilar información.\nGoogle Drive → Reuniones y clases virtuales con video y chat integrado.\n\nGoogle Meet → Organización de materiales y control de accesos (ver, comentar, editar).",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Módulo 1</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_01.html#google-docs",
+    "href": "modulos/modulo_01.html#google-docs",
+    "title": "Módulo 1",
+    "section": "Google Docs",
+    "text": "Google Docs\n\nRedacción colaborativa (varios editores en simultáneo).\n\nComentarios y sugerencias para revisión entre pares.\n\nPlantillas para crear actas de reunión, guías de ejercicios o manuales.\n\n👉 Actividad práctica:\n1. Crea un documento en Google Docs llamado “Guía de Clase - [Tu nombre]”.\n2. Comparte el documento con un compañero del curso con permisos de comentario.\n3. Agrega un título, un párrafo introductorio y una sección con 3 preguntas para tus estudiantes.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Módulo 1</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_01.html#google-sheets",
+    "href": "modulos/modulo_01.html#google-sheets",
+    "title": "Módulo 1",
+    "section": "Google Sheets",
+    "text": "Google Sheets\n\nRegistro de notas y asistencia.\n\nCálculos básicos con fórmulas (=PROMEDIO, =MAX, =MIN).\n\nGráficos sencillos para visualizar resultados de encuestas o evaluaciones.\n\n👉 Actividad práctica:\n1. Crea una planilla en Google Sheets llamada “Notas Curso [Tu nombre]”.\n2. Ingresa 10 estudiantes ficticios con sus calificaciones en 3 actividades.\n3. Calcula el promedio de cada estudiante usando =PROMEDIO().\n4. Genera un gráfico de barras mostrando los resultados.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Módulo 1</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_01.html#google-slides",
+    "href": "modulos/modulo_01.html#google-slides",
+    "title": "Módulo 1",
+    "section": "Google Slides",
+    "text": "Google Slides\n\nCreación de presentaciones visuales y dinámicas.\n\nInserción de imágenes, videos y enlaces.\n\nUso de temas y transiciones para mejorar la narrativa.\n\n👉 Actividad práctica:\n1. Crea una presentación en Google Slides llamada “Presentación Curso [Tu nombre]”.\n2. Diseña 3 diapositivas:\n- Introducción a tu asignatura/taller.\n- Un concepto clave con imagen o gráfico.\n- Una conclusión con preguntas para discusión.\n3. Comparte la presentación con un compañero y pídele que agregue un comentario en una diapositiva.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Módulo 1</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_01.html#google-forms",
+    "href": "modulos/modulo_01.html#google-forms",
+    "title": "Módulo 1",
+    "section": "Google Forms",
+    "text": "Google Forms\n\nCreación de encuestas y formularios en línea.\n\nRecopilación automática de respuestas en Google Sheets.\n\nUso de cuestionarios para autoevaluaciones.\n\n👉 Actividad práctica:\n1. Crea un formulario en Google Forms titulado “Encuesta de Retroalimentación - [Tu nombre]”.\n2. Incluye preguntas de opción múltiple, escala de satisfacción y una abierta.\n3. Envía el link a tus compañeros y revisa las respuestas en la pestaña Respuestas.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Módulo 1</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_01.html#google-meet",
+    "href": "modulos/modulo_01.html#google-meet",
+    "title": "Módulo 1",
+    "section": "Google Meet",
+    "text": "Google Meet\n\nOrganización de videollamadas y clases virtuales.\n\nCompartir pantalla y grabar sesiones.\n\nChat en vivo para resolver dudas.\n\n👉 Actividad práctica:\n1. Programa una reunión en Google Meet titulada “Clase de prueba - [Tu nombre]”.\n2. Invita a un compañero para probar las funciones de chat y compartir pantalla.\n3. Haz una mini-presentación usando tu archivo de Google Slides.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Módulo 1</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_01.html#trabajo-en-google-drive",
+    "href": "modulos/modulo_01.html#trabajo-en-google-drive",
+    "title": "Módulo 1",
+    "section": "Trabajo en Google Drive",
+    "text": "Trabajo en Google Drive\n\nCómo organizar carpetas de curso en Drive.\n\nControl de accesos: ver, comentar, editar.\n\nEjemplo: Carpeta compartida con Docs, Sheets, Slides y Forms del curso.\n\n👉 Actividad práctica final:\n1. Crea una carpeta en Google Drive llamada “OpenClass - [Tu nombre]”.\n2. Guarda allí tus 4 archivos (Docs, Sheets, Slides y Forms).\n3. Comparte la carpeta con el profesor/a y compañeros con permisos de visualización.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Módulo 1</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_01.html#resultado-esperado",
+    "href": "modulos/modulo_01.html#resultado-esperado",
+    "title": "Módulo 1",
+    "section": "Resultado esperado",
+    "text": "Resultado esperado\nAl finalizar este módulo tendrás un kit docente básico en Google Workspace compuesto por:\n\nDocumento en Google Docs.\n\nPlanilla en Google Sheets con notas y gráfico.\n\nPresentación en Google Slides.\n\nFormulario en Google Forms con respuestas.\n\nReunión de práctica en Google Meet.\n\nCarpeta organizada en Google Drive para compartir con tus estudiantes.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Módulo 1</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_02.html",
+    "href": "modulos/modulo_02.html",
+    "title": "Módulo 2",
+    "section": "",
+    "text": "ChatGPT en la Docencia\nEn este módulo exploraremos cómo ChatGPT puede apoyar a los docentes en la creación de materiales, actividades y recursos educativos.\nEl objetivo es que los participantes comprendan cómo usar la IA como asistente creativo y productivo, siempre con un enfoque ético y responsable.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Módulo 2</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_02.html#objetivos-de-aprendizaje",
+    "href": "modulos/modulo_02.html#objetivos-de-aprendizaje",
+    "title": "Módulo 2",
+    "section": "Objetivos de aprendizaje",
+    "text": "Objetivos de aprendizaje\n\nAprender a generar materiales educativos con ChatGPT.\n\nCrear evaluaciones, rúbricas y ejemplos adaptados a distintos niveles.\n\nExplorar usos de ChatGPT para redacción académica y apoyo en LaTeX/Quarto.\n\nReflexionar sobre los límites, sesgos y buenas prácticas en el uso de IA.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Módulo 2</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_02.html#usos-principales-en-la-docencia",
+    "href": "modulos/modulo_02.html#usos-principales-en-la-docencia",
+    "title": "Módulo 2",
+    "section": "Usos principales en la docencia",
+    "text": "Usos principales en la docencia\n\nCreación de materiales\n\nExplicaciones de conceptos en distintos niveles de dificultad.\n\nGuías de estudio o resúmenes temáticos.\n\nGeneración de ejercicios\n\nPreguntas de opción múltiple.\n\nProblemas prácticos con soluciones paso a paso.\n\nEvaluación\n\nDiseño de rúbricas claras y aplicables.\n\nRetroalimentación automática de textos o respuestas.\n\nRedacción asistida\n\nCorrección de estilo y gramática en textos académicos.\n\nTransformación de apuntes en documentos formales (LaTeX/Quarto).",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Módulo 2</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_02.html#ejemplos-de-prompts-prácticos",
+    "href": "modulos/modulo_02.html#ejemplos-de-prompts-prácticos",
+    "title": "Módulo 2",
+    "section": "Ejemplos de prompts prácticos",
+    "text": "Ejemplos de prompts prácticos\n\n1. Explicaciones adaptadas\nExplica el concepto de \"derivada\" como si hablara con:\n1. Un estudiante de secundaria.\n2. Un estudiante universitario de ingeniería.\n3. Un colega docente de matemáticas.\n\n\n2. Generación de ejercicios\nGenera 5 ejercicios de opción múltiple sobre condicionales en Python,\ncada uno con 4 alternativas y la respuesta correcta indicada.\n\n\n3. Rúbricas de evaluación\nDiseña una rúbrica simple para evaluar un informe de laboratorio en educación secundaria,\ncon criterios de claridad, estructura, redacción y análisis de resultados.\n\n\n4. Escritura asistida\nRevisa el siguiente párrafo y propón una versión más clara y formal\npara un artículo académico en educación:\n\n[pegar texto aquí]\n\n\n5. Apoyo en LaTeX/Quarto\nTransforma este enunciado de problema en un bloque LaTeX bien formateado,\nincluyendo ecuaciones y numeración:\n\n\"Resolver la ecuación cuadrática x^2 + 5x + 6 = 0\"",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Módulo 2</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_02.html#uso-responsable-de-chatgpt",
+    "href": "modulos/modulo_02.html#uso-responsable-de-chatgpt",
+    "title": "Módulo 2",
+    "section": "Uso responsable de ChatGPT",
+    "text": "Uso responsable de ChatGPT\n\nVerificar siempre: la IA puede generar errores (“alucinaciones”).\nCuidar la autoría: no presentar como propio lo generado por IA sin revisión.\nConsiderar sesgos: la IA refleja limitaciones de sus datos de entrenamiento.\nÉtica en el aula: enseñar a estudiantes a usar IA como herramienta de apoyo, no como sustituto.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Módulo 2</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_02.html#actividad-práctica",
+    "href": "modulos/modulo_02.html#actividad-práctica",
+    "title": "Módulo 2",
+    "section": "Actividad práctica",
+    "text": "Actividad práctica\n\nElige un tema de tu asignatura.\nGenera:\n\nUna explicación adaptada (ejemplo para secundaria y universidad).\nUna pregunta de opción múltiple con respuesta correcta.\nUna rúbrica simple para evaluar una tarea.\n\nCopia los resultados en un documento de Google Docs o en tu repositorio de curso.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Módulo 2</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_02.html#resultado-esperado",
+    "href": "modulos/modulo_02.html#resultado-esperado",
+    "title": "Módulo 2",
+    "section": "Resultado esperado",
+    "text": "Resultado esperado\nAl finalizar este módulo, tendrás:\n\nUn mini set de prompts docentes listos para usar en tu práctica.\nMaterial generado (explicaciones, ejercicios y rúbricas) adaptado a tu asignatura.\nUna reflexión sobre cómo usar ChatGPT de forma ética y responsable.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Módulo 2</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_03.html",
+    "href": "modulos/modulo_03.html",
+    "title": "Módulo 3",
+    "section": "",
+    "text": "Git y GitHub como Aula Virtual Expandida\nEn este módulo aprenderemos a utilizar Git y GitHub como herramientas para organizar, versionar y compartir materiales educativos.\nLa idea central es que cada docente cree su propio repositorio de curso, que funcione como un aula virtual abierta y reproducible, donde estudiantes y colegas puedan acceder a apuntes, actividades, notebooks y presentaciones en cualquier momento.\nGit y GitHub nos permiten dar un paso más allá de los archivos guardados en un pendrive o en la nube: hablamos de una historia de versiones, un espacio colaborativo y una vitrina académica.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Módulo 3</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_03.html#objetivos-de-aprendizaje",
+    "href": "modulos/modulo_03.html#objetivos-de-aprendizaje",
+    "title": "Módulo 3",
+    "section": "Objetivos de aprendizaje",
+    "text": "Objetivos de aprendizaje\nAl finalizar este módulo podrás:\n\nComprender los conceptos básicos de control de versiones con Git.\n\nCrear un repositorio en GitHub para organizar materiales de clase.\n\nSubir documentos, notebooks y presentaciones al repositorio.\n\nGestionar cambios y mantener un historial claro de tu curso.\n\nUsar GitHub como una plataforma de publicación y difusión de recursos educativos (con GitHub Pages).\n\nFavorecer la transparencia, reproducibilidad y colaboración en el aula.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Módulo 3</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_03.html#conceptos-clave",
+    "href": "modulos/modulo_03.html#conceptos-clave",
+    "title": "Módulo 3",
+    "section": "Conceptos clave",
+    "text": "Conceptos clave\n\nRepositorio → carpeta organizada de archivos (local o en la nube) que contiene todo tu proyecto o curso.\n\nCommit → guardar cambios en el repositorio con un mensaje descriptivo, como un “historial” de lo que hiciste.\n\nPush → enviar los cambios desde tu computador (local) hacia el repositorio en GitHub (nube).\n\nPull → traer cambios desde GitHub a tu computador para mantenerte actualizado.\n\nClone → descargar/copiar un repositorio existente en tu máquina local.\n\nBranch → versiones paralelas de trabajo; en este curso trabajaremos solo con la rama principal (main).\n\nREADME.md → archivo principal que explica de qué se trata el repositorio (presentación del curso).",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Módulo 3</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_03.html#por-qué-usar-github-como-aula-virtual",
+    "href": "modulos/modulo_03.html#por-qué-usar-github-como-aula-virtual",
+    "title": "Módulo 3",
+    "section": "¿Por qué usar GitHub como aula virtual?",
+    "text": "¿Por qué usar GitHub como aula virtual?\n\nPermite centralizar los materiales en un solo lugar accesible para todos.\n\nSe pueden versionar documentos, viendo cómo evolucionan en el tiempo.\n\nFacilita el trabajo colaborativo entre docentes y ayudantes.\n\nLos estudiantes pueden replicar y practicar con el mismo código y actividades.\n\nGitHub Pages permite transformar tu repositorio en una página web abierta sin costo.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Módulo 3</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_03.html#crear-tu-primer-repositorio",
+    "href": "modulos/modulo_03.html#crear-tu-primer-repositorio",
+    "title": "Módulo 3",
+    "section": "Crear tu primer repositorio",
+    "text": "Crear tu primer repositorio\n\nIngresa a GitHub y crea una cuenta (si no la tienes).\n\nHaz clic en New Repository.\n\nNombra tu repo, por ejemplo:\n\ncurso-python-2025\n\nmatematicas-aplicadas\n\n\nAgrega una descripción breve (ejemplo: “Materiales del curso de Matemáticas Aplicadas - UTFSM 2025”).\n\nMarca la opción Public (para que sea accesible a todos).\n\nSelecciona la casilla Add a README file.\n\nHaz clic en Create Repository.\n\n👉 Ahora tienes tu aula virtual en GitHub: un espacio central para todo tu curso.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Módulo 3</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_03.html#subir-materiales-a-tu-repositorio",
+    "href": "modulos/modulo_03.html#subir-materiales-a-tu-repositorio",
+    "title": "Módulo 3",
+    "section": "Subir materiales a tu repositorio",
+    "text": "Subir materiales a tu repositorio\nHay dos formas principales:\n\nOpción 1: Subir desde la web\n\nIngresa a tu repositorio en GitHub.\n\nHaz clic en Add file → Upload files.\n\nArrastra tus documentos, notebooks y presentaciones.\n\nEscribe un mensaje de confirmación (ejemplo: “Agregando materiales de la semana 1”).\n\nHaz clic en Commit changes.\n\n\n\nOpción 2: Usar Git en tu computador\n\nInstala Git.\n\nAbre una terminal y escribe:\n\ngit clone https://github.com/tuusuario/curso-python-2025.git\ncd curso-python-2025\n\nCopia dentro de esta carpeta tus archivos del curso.\nLuego ejecuta:\n\ngit add .\ngit commit -m \"Agregando materiales iniciales\"\ngit push origin main\n👉 Con esto los materiales ya estarán en GitHub.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Módulo 3</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_03.html#ejemplo-de-estructura-de-repositorio-de-curso",
+    "href": "modulos/modulo_03.html#ejemplo-de-estructura-de-repositorio-de-curso",
+    "title": "Módulo 3",
+    "section": "Ejemplo de estructura de repositorio de curso",
+    "text": "Ejemplo de estructura de repositorio de curso\ncurso-python-2025/\n│\n├── README.md                # Presentación del curso\n├── clases/                  # Apuntes y presentaciones\n│   ├── clase_01.pdf\n│   ├── clase_02.pdf\n│\n├── notebooks/               # Actividades prácticas en Jupyter\n│   ├── intro_python.ipynb\n│   ├── funciones.ipynb\n│\n├── evaluaciones/            # Controles, tareas y proyectos\n│   ├── tarea_1.md\n│   ├── proyecto_final.pdf\n│\n└── recursos/                # Bibliografía, imágenes, datasets\n    ├── guia.pdf\n    ├── dataset.csv",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Módulo 3</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_03.html#publicar-tu-curso-como-página-web-extra",
+    "href": "modulos/modulo_03.html#publicar-tu-curso-como-página-web-extra",
+    "title": "Módulo 3",
+    "section": "Publicar tu curso como página web (extra)",
+    "text": "Publicar tu curso como página web (extra)\nCon GitHub Pages puedes convertir tu repositorio en una web sencilla:\n\nVe a tu repositorio → Settings → Pages.\nEn Source selecciona la rama main y carpeta / (root).\nHaz clic en Save.\n\n👉 Obtendrás un enlace tipo: https://tuusuario.github.io/curso-python-2025/\nIdeal para difundir tu curso a estudiantes y colegas.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Módulo 3</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_03.html#actividades-prácticas",
+    "href": "modulos/modulo_03.html#actividades-prácticas",
+    "title": "Módulo 3",
+    "section": "Actividades prácticas",
+    "text": "Actividades prácticas\n\nCrea tu primer repositorio con un archivo README.md que describa tu curso.\nSube un documento PDF y un notebook Jupyter al repositorio.\nOrganiza una estructura de carpetas (clases, evaluaciones, recursos).\nHabilita GitHub Pages para tu repo y comparte el link con tus compañeros.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Módulo 3</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_03.html#resultado-esperado",
+    "href": "modulos/modulo_03.html#resultado-esperado",
+    "title": "Módulo 3",
+    "section": "Resultado esperado",
+    "text": "Resultado esperado\nAl finalizar este módulo tendrás:\n\nUn repositorio de curso en GitHub.\nMateriales organizados en carpetas.\nUn README de presentación del curso.\nUn enlace web para difundir tu curso mediante GitHub Pages.\nLa experiencia de usar Git como herramienta de control de versiones aplicada a la docencia.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Módulo 3</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_04.html",
+    "href": "modulos/modulo_04.html",
+    "title": "Módulo 4",
+    "section": "",
+    "text": "Redacción académica con LaTeX\nEn este módulo aprenderemos a usar LaTeX como herramienta de redacción académica para crear documentos formales, artículos científicos, guías de clase y tesis.\nTrabajaremos con dos enfoques complementarios:\nDe esta manera, cada docente podrá escoger el flujo que más se ajuste a su contexto, o incluso combinar ambos.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Módulo 4</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_04.html#objetivos-de-aprendizaje",
+    "href": "modulos/modulo_04.html#objetivos-de-aprendizaje",
+    "title": "Módulo 4",
+    "section": "Objetivos de aprendizaje",
+    "text": "Objetivos de aprendizaje\nAl finalizar este módulo podrás:\n\nComprender la estructura básica de un documento en LaTeX.\n\nRedactar textos académicos con secciones, listas, citas y referencias.\n\nInsertar ecuaciones matemáticas, tablas y figuras en tus materiales.\n\nUsar Overleaf para trabajar de manera colaborativa y TeX Live local para independencia total.\n\nVersionar proyectos en GitHub para mayor transparencia y reutilización.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Módulo 4</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_04.html#herramientas-principales",
+    "href": "modulos/modulo_04.html#herramientas-principales",
+    "title": "Módulo 4",
+    "section": "Herramientas principales",
+    "text": "Herramientas principales\n\nOverleaf: editor online colaborativo → https://www.overleaf.com\n\nTeX Live: distribución completa de LaTeX para uso local.\n\nVS Code con LaTeX Workshop o TeXstudio: editores recomendados para compilar en tu PC.\n\nGitHub: control de versiones y publicación de proyectos académicos.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Módulo 4</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_04.html#anatomía-de-un-documento-en-latex",
+    "href": "modulos/modulo_04.html#anatomía-de-un-documento-en-latex",
+    "title": "Módulo 4",
+    "section": "Anatomía de un documento en LaTeX",
+    "text": "Anatomía de un documento en LaTeX\nUn documento básico en LaTeX se construye con tres partes:\n\nPreambulo → configuración de idioma, paquetes y estilo.\n\nCuerpo → secciones, párrafos, ecuaciones, tablas y figuras.\n\nReferencias → bibliografía en formato BibTeX.\n\nEjemplo mínimo:\n\\documentclass[12pt,a4paper]{article}\n\n\\usepackage[utf8]{inputenc}\n\\usepackage[T1]{fontenc}\n\\usepackage[spanish]{babel}\n\\usepackage{amsmath, amssymb}\n\\usepackage{graphicx}\n\\usepackage{booktabs}\n\\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}\n\n\\title{Guía de Clase en \\LaTeX}\n\\author{Nombre del Docente}\n\\date{\\today}\n\n\\begin{document}\n\n\\maketitle\n\n\\section{Introducción}\nEste es un ejemplo de documento académico escrito en \\LaTeX.\n\n\\section{Ecuaciones}\nLa famosa fórmula de Einstein:\n\\[\nE = mc^2\n\\]\n\n\\section{Tablas}\n\\begin{table}[h]\n\\centering\n\\begin{tabular}{lrr}\n\\toprule\nEstudiante & Nota 1 & Nota 2 \\\\\n\\midrule\nAna        & 6.0    & 5.5 \\\\\nLuis       & 5.8    & 6.2 \\\\\n\\bottomrule\n\\end{tabular}\n\\caption{Ejemplo de tabla de notas}\n\\end{table}\n\n\\section{Referencias}\nTexto con cita \\cite{knuth1984texbook}.\n\n\\bibliographystyle{plain}\n\\bibliography{refs}\n\n\\end{document}",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Módulo 4</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_04.html#archivo-refs.bib-bibliografía",
+    "href": "modulos/modulo_04.html#archivo-refs.bib-bibliografía",
+    "title": "Módulo 4",
+    "section": "Archivo refs.bib (bibliografía)",
+    "text": "Archivo refs.bib (bibliografía)\n@book{knuth1984texbook,\n  author    = {Donald E. Knuth},\n  title     = {The TeXbook},\n  year      = {1984},\n  publisher = {Addison-Wesley}\n}\n👉 Este archivo externo permite mantener una bibliografía organizada y escalable.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Módulo 4</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_04.html#flujo-en-overleaf-colaborativo",
+    "href": "modulos/modulo_04.html#flujo-en-overleaf-colaborativo",
+    "title": "Módulo 4",
+    "section": "Flujo en Overleaf (colaborativo)",
+    "text": "Flujo en Overleaf (colaborativo)\n\nCrear un nuevo proyecto en Overleaf.\nCopiar el código de ejemplo en main.tex.\nSubir el archivo refs.bib con tus referencias.\nInvitar a un colega o estudiante para trabajar en conjunto.\n\n🔑 Ventajas:\n\nNo requiere instalación.\nPermite colaboración en tiempo real.\nHistorial de cambios y chat integrado.\n\n👉 Ideal para papers compartidos, proyectos grupales y guías de clase.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Módulo 4</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_04.html#flujo-local-independencia-total",
+    "href": "modulos/modulo_04.html#flujo-local-independencia-total",
+    "title": "Módulo 4",
+    "section": "Flujo local (independencia total)",
+    "text": "Flujo local (independencia total)\n\nInstalar TeX Live en tu computador (Windows, Linux o Mac).\nUsar VS Code con la extensión LaTeX Workshop o TeXstudio.\nCompilar en terminal con:\npdflatex main.tex\nbibtex main.aux\npdflatex main.tex\npdflatex main.tex\nSubir el proyecto a GitHub para versionarlo y compartirlo.\n\n🔑 Ventajas:\n\nFunciona sin internet.\nTotal control de paquetes y estilos.\nReproducibilidad asegurada en cualquier entorno académico.\n\n👉 Ideal para tesis, libros o documentos de gran tamaño.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Módulo 4</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_04.html#comparación-rápida",
+    "href": "modulos/modulo_04.html#comparación-rápida",
+    "title": "Módulo 4",
+    "section": "🔍 Comparación rápida",
+    "text": "🔍 Comparación rápida\n\n\n\n\n\n\n\n\nAspecto\nOverleaf 🌐\nTeX Live local 💻\n\n\n\n\nInstalación\nNo requiere\nSí, distribución completa\n\n\nColaboración\nEn tiempo real\nManual (Git/GitHub)\n\n\nAccesibilidad\nCualquier navegador\nSolo tu computador\n\n\nFlexibilidad\nLimitada a los paquetes en Overleaf\nTotal control\n\n\nIdeal para\nPapers y proyectos colaborativos\nTesis y flujo reproducible",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Módulo 4</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_04.html#actividad-práctica",
+    "href": "modulos/modulo_04.html#actividad-práctica",
+    "title": "Módulo 4",
+    "section": "Actividad práctica",
+    "text": "Actividad práctica\n\nAbre Overleaf y crea un nuevo proyecto.\nRedacta un documento con:\n\nUn título y autoría.\nUna ecuación matemática.\nUna tabla con datos ficticios de estudiantes.\nUna referencia bibliográfica en formato BibTeX.\n\nDescarga el proyecto en .zip y súbelo a tu repositorio de curso en GitHub.\n(Opcional) Repite los pasos en TeX Live local y compara ambos flujos.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Módulo 4</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_04.html#resultado-esperado",
+    "href": "modulos/modulo_04.html#resultado-esperado",
+    "title": "Módulo 4",
+    "section": "Resultado esperado",
+    "text": "Resultado esperado\nAl terminar este módulo tendrás:\n\nUn documento académico en LaTeX con portada básica.\nUna ecuación matemática correctamente renderizada.\nUna tabla con datos ficticios.\nUna referencia bibliográfica en BibTeX.\nProyecto colaborativo en Overleaf y/o flujo reproducible en TeX Live local.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Módulo 4</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_05.html",
+    "href": "modulos/modulo_05.html",
+    "title": "Módulo 5",
+    "section": "",
+    "text": "Documentación y Presentaciones con Quarto\nEn este módulo exploraremos Quarto como una plataforma integral para la creación de materiales académicos. A diferencia de procesadores tradicionales (Word, PowerPoint), Quarto integra texto, código y resultados en un mismo flujo, lo que permite reproducibilidad, transparencia y evita duplicar esfuerzos.\nCon Quarto, un docente puede preparar reportes, artículos, libros o presentaciones en un solo entorno: el mismo código que produce un resultado también genera las tablas y gráficos que se incluyen en el documento.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Módulo 5</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_05.html#objetivos-de-aprendizaje",
+    "href": "modulos/modulo_05.html#objetivos-de-aprendizaje",
+    "title": "Módulo 5",
+    "section": "Objetivos de aprendizaje",
+    "text": "Objetivos de aprendizaje\n\nComprender qué es Quarto y cómo se relaciona con Markdown, LaTeX y lenguajes de programación.\nCrear un documento reproducible con texto, código y gráficos.\nDiseñar una presentación académica con reveal.js.\nPersonalizar formatos y estilos en Quarto.\nPublicar materiales en línea mediante GitHub Pages.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Módulo 5</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_05.html#qué-es-quarto-y-cómo-funciona",
+    "href": "modulos/modulo_05.html#qué-es-quarto-y-cómo-funciona",
+    "title": "Módulo 5",
+    "section": "¿Qué es Quarto y cómo funciona?",
+    "text": "¿Qué es Quarto y cómo funciona?\nQuarto es un motor de publicación reproducible que sigue tres pasos principales:\n\nEscritura: el autor redacta en un archivo .qmd (basado en Markdown).\nEjecución: Quarto procesa los bloques de código (Python, R, Julia, ObservableJS, etc.) y guarda los resultados.\nRenderizado: el contenido se transforma en documentos HTML, PDF, Word, libros o presentaciones.\n\nEsto significa que un mismo archivo .qmd puede generar:\n\nUn reporte en HTML para publicar en la web.\nUn PDF académico listo para entregar.\nUna presentación interactiva en reveal.js.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Módulo 5</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_05.html#anatomía-de-un-archivo-.qmd",
+    "href": "modulos/modulo_05.html#anatomía-de-un-archivo-.qmd",
+    "title": "Módulo 5",
+    "section": "Anatomía de un archivo .qmd",
+    "text": "Anatomía de un archivo .qmd\nUn archivo .qmd tiene tres partes principales:\n\nEncabezado YAML: metadatos del documento (título, autor, fecha, formato).\nTexto en Markdown: secciones, listas, tablas y párrafos.\nBloques de código ejecutable: fragmentos en Python, R, Julia o SQL.\n\nEjemplo mínimo:\n\ntitle: “Ejemplo de reporte” author: “Nombre del docente” format: html ————",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Módulo 5</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_05.html#cálculo-en-python",
+    "href": "modulos/modulo_05.html#cálculo-en-python",
+    "title": "Módulo 5",
+    "section": "Cálculo en Python",
+    "text": "Cálculo en Python\n\nx = [1, 2, 3, 4, 5]\nsum(x)/len(x)\n\n3.0",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Módulo 5</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_05.html#ejemplo-documento-reproducible",
+    "href": "modulos/modulo_05.html#ejemplo-documento-reproducible",
+    "title": "Módulo 5",
+    "section": "Ejemplo: Documento reproducible",
+    "text": "Ejemplo: Documento reproducible\nArchivo reporte.qmd:\n\ntitle: “Reporte de Notas” author: “Nombre del docente” date: “2025-09-17” format: html ————",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Módulo 5</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_05.html#visualización",
+    "href": "modulos/modulo_05.html#visualización",
+    "title": "Módulo 5",
+    "section": "Visualización",
+    "text": "Visualización\n\ndf.plot(x=\"Estudiante\", y=\"Promedio\", kind=\"bar\", legend=False)\nplt.title(\"Promedio de notas\")\nplt.show()\n\n\n\n\n\n\n\n\nRenderiza con:\nquarto render reporte.qmd\nEsto genera un HTML con tabla y gráfico directamente integrados.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Módulo 5</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_05.html#ejemplo-presentación-con-reveal.js",
+    "href": "modulos/modulo_05.html#ejemplo-presentación-con-reveal.js",
+    "title": "Módulo 5",
+    "section": "Ejemplo: Presentación con reveal.js",
+    "text": "Ejemplo: Presentación con reveal.js\nArchivo presentacion.qmd:\n\ntitle: “Presentación de Clase” author: “Nombre del docente” format: revealjs —————-",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Módulo 5</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_05.html#personalización-en-quarto",
+    "href": "modulos/modulo_05.html#personalización-en-quarto",
+    "title": "Módulo 5",
+    "section": "Personalización en Quarto",
+    "text": "Personalización en Quarto\n\nFormatos múltiples: basta con cambiar format: html por pdf o docx en el YAML.\nTemas y estilos: reveal.js permite cambiar temas de diapositiva (simple, night, sky) y añadir transiciones.\nParámetros: se pueden crear reportes dinámicos con variables que cambien según la ejecución.\n\nEjemplo de YAML con opciones personalizadas:\nformat: revealjs: theme: simple transition: slide incremental: true",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Módulo 5</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_05.html#publicación-en-github-pages",
+    "href": "modulos/modulo_05.html#publicación-en-github-pages",
+    "title": "Módulo 5",
+    "section": "Publicación en GitHub Pages",
+    "text": "Publicación en GitHub Pages\n\nSubir los archivos .qmd a un repositorio.\nActivar GitHub Pages desde Settings &gt; Pages.\nConfigurar la carpeta de publicación (docs/ suele ser la más usada).\nEl sitio estará disponible en:\nhttps://usuario.github.io/mi-curso-quarto/\n\nEsto convierte tus reportes y presentaciones en recursos accesibles públicamente.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Módulo 5</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_05.html#casos-de-uso-en-docencia",
+    "href": "modulos/modulo_05.html#casos-de-uso-en-docencia",
+    "title": "Módulo 5",
+    "section": "Casos de uso en docencia",
+    "text": "Casos de uso en docencia\n\nReportes automáticos de evaluaciones: generar gráficos y tablas de notas con un clic.\nApuntes de clase: materiales vivos que combinan teoría y ejemplos de código.\nPresentaciones interactivas: diapositivas con código ejecutado en vivo.\nLibros de curso: un repositorio completo que se transforma en un libro online.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Módulo 5</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_05.html#actividad-práctica",
+    "href": "modulos/modulo_05.html#actividad-práctica",
+    "title": "Módulo 5",
+    "section": "Actividad práctica",
+    "text": "Actividad práctica\n\nCrea un reporte.qmd con datos ficticios de notas y un gráfico de barras.\nCrea una presentacion.qmd con tres secciones: introducción, concepto clave y visualización.\nPersonaliza la presentación cambiando el tema y la transición.\nPublica ambos archivos en GitHub Pages.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Módulo 5</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_05.html#resultado-esperado",
+    "href": "modulos/modulo_05.html#resultado-esperado",
+    "title": "Módulo 5",
+    "section": "Resultado esperado",
+    "text": "Resultado esperado\n\nDocumento reproducible con texto, código y gráficos.\nPresentación reveal.js interactiva y personalizada.\nMateriales publicados en GitHub Pages para acceso abierto.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Módulo 5</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_06.html",
+    "href": "modulos/modulo_06.html",
+    "title": "Módulo 6",
+    "section": "",
+    "text": "Aplicaciones Interactivas (Streamlit / Shiny)\nEn este módulo exploraremos cómo crear aplicaciones interactivas que permitan a los estudiantes experimentar con conceptos de manera práctica y visual. Trabajaremos con Streamlit (Python) y Shiny (R) para desarrollar aplicaciones sencillas que se pueden aplicar directamente en contextos educativos.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Módulo 6</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_06.html#objetivos-de-aprendizaje",
+    "href": "modulos/modulo_06.html#objetivos-de-aprendizaje",
+    "title": "Módulo 6",
+    "section": "Objetivos de aprendizaje",
+    "text": "Objetivos de aprendizaje\n\nComprender qué son las aplicaciones interactivas y su relevancia en docencia.\nCrear una aplicación básica con Streamlit en Python.\nCrear una aplicación básica con Shiny en R.\nIdentificar ejemplos de uso educativo como simuladores, calculadoras y tableros de datos.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Módulo 6</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_06.html#herramientas-principales",
+    "href": "modulos/modulo_06.html#herramientas-principales",
+    "title": "Módulo 6",
+    "section": "Herramientas principales",
+    "text": "Herramientas principales\n\nStreamlit: framework en Python para construir aplicaciones de datos de forma rápida y accesible.\nShiny: framework en R para crear aplicaciones interactivas y dashboards sin necesidad de lenguajes adicionales.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Módulo 6</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_06.html#ejemplo-en-streamlit-python",
+    "href": "modulos/modulo_06.html#ejemplo-en-streamlit-python",
+    "title": "Módulo 6",
+    "section": "Ejemplo en Streamlit (Python)",
+    "text": "Ejemplo en Streamlit (Python)\nGuarda este código como app.py y ejecútalo con streamlit run app.py.\nimport streamlit as st\nimport pandas as pd\n\nst.title(\"Calculadora de Promedios\")\n\n# Ingreso de datos\nst.write(\"Ingresa las notas de tus estudiantes:\")\n\nestudiantes = [\"Ana\", \"Luis\", \"Pedro\", \"Carla\"]\nnotas = {}\n\nfor estudiante in estudiantes:\n    notas[estudiante] = st.number_input(f\"Nota de {estudiante}\", 1.0, 7.0, 5.5)\n\n# Crear DataFrame\ndf = pd.DataFrame(list(notas.items()), columns=[\"Estudiante\", \"Nota\"])\n\n# Calcular promedio\npromedio = df[\"Nota\"].mean()\n\nst.subheader(\"Resultados\")\nst.dataframe(df)\nst.write(f\"Promedio del curso: {promedio:.2f}\")\n\nif promedio &gt;= 5.5:\n    st.success(\"El curso aprueba\")\nelse:\n    st.error(\"El curso no aprueba\")\nEsta aplicación permite ingresar notas manualmente y calcular el promedio del curso en tiempo real.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Módulo 6</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_06.html#ejemplo-en-shiny-r",
+    "href": "modulos/modulo_06.html#ejemplo-en-shiny-r",
+    "title": "Módulo 6",
+    "section": "Ejemplo en Shiny (R)",
+    "text": "Ejemplo en Shiny (R)\nGuarda este código como app.R y ejecútalo en RStudio con runApp(\"app.R\").\nlibrary(shiny)\n\nui &lt;- fluidPage(\n  titlePanel(\"Calculadora de Promedios\"),\n  \n  sidebarLayout(\n    sidebarPanel(\n      numericInput(\"ana\", \"Nota de Ana:\", 5.5, min = 1, max = 7, step = 0.1),\n      numericInput(\"luis\", \"Nota de Luis:\", 6.0, min = 1, max = 7, step = 0.1),\n      numericInput(\"pedro\", \"Nota de Pedro:\", 4.8, min = 1, max = 7, step = 0.1),\n      numericInput(\"carla\", \"Nota de Carla:\", 6.2, min = 1, max = 7, step = 0.1)\n    ),\n    \n    mainPanel(\n      tableOutput(\"tabla\"),\n      textOutput(\"promedio\"),\n      textOutput(\"estado\")\n    )\n  )\n)\n\nserver &lt;- function(input, output) {\n  output$tabla &lt;- renderTable({\n    data.frame(\n      Estudiante = c(\"Ana\", \"Luis\", \"Pedro\", \"Carla\"),\n      Nota = c(input$ana, input$luis, input$pedro, input$carla)\n    )\n  })\n  \n  output$promedio &lt;- renderText({\n    notas &lt;- c(input$ana, input$luis, input$pedro, input$carla)\n    paste(\"Promedio del curso:\", round(mean(notas), 2))\n  })\n  \n  output$estado &lt;- renderText({\n    notas &lt;- c(input$ana, input$luis, input$pedro, input$carla)\n    if (mean(notas) &gt;= 5.5) {\n      \"El curso aprueba\"\n    } else {\n      \"El curso no aprueba\"\n    }\n  })\n}\n\nshinyApp(ui = ui, server = server)\nEsta aplicación reproduce la misma lógica, pero implementada en R con el framework Shiny.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Módulo 6</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_06.html#usos-educativos-de-aplicaciones-interactivas",
+    "href": "modulos/modulo_06.html#usos-educativos-de-aplicaciones-interactivas",
+    "title": "Módulo 6",
+    "section": "Usos educativos de aplicaciones interactivas",
+    "text": "Usos educativos de aplicaciones interactivas\nLas aplicaciones construidas con Streamlit o Shiny pueden aplicarse en múltiples escenarios de enseñanza:\n\nSimuladores de probabilidad y estadística para experimentar con distribuciones y resultados.\nVisualización de funciones matemáticas de manera dinámica.\nCalculadoras de notas o rúbricas interactivas de evaluación.\nExploración de datos en encuestas, proyectos de investigación o ejercicios prácticos en clase.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Módulo 6</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_06.html#actividad-práctica",
+    "href": "modulos/modulo_06.html#actividad-práctica",
+    "title": "Módulo 6",
+    "section": "Actividad práctica",
+    "text": "Actividad práctica\n\nElige una de las dos herramientas (Streamlit o Shiny) según el lenguaje que manejes.\nCrea una aplicación sencilla que permita:\n\nIngresar datos de al menos tres estudiantes.\nCalcular un promedio de notas.\nMostrar si el grupo aprueba o no.\n\nComparte tu aplicación con tu grupo mediante un servicio en la nube como Streamlit Cloud o Shinyapps.io.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Módulo 6</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_06.html#resultado-esperado",
+    "href": "modulos/modulo_06.html#resultado-esperado",
+    "title": "Módulo 6",
+    "section": "Resultado esperado",
+    "text": "Resultado esperado\nAl finalizar este módulo, tendrás una aplicación educativa interactiva capaz de:\n\nRecibir datos de entrada del usuario.\nRealizar cálculos básicos.\nMostrar resultados y visualizaciones en tiempo real.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Módulo 6</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_07.html",
+    "href": "modulos/modulo_07.html",
+    "title": "Módulo 7",
+    "section": "",
+    "text": "Introducción a la Programación en R y Python\nEn este módulo daremos los primeros pasos en programación con R y Python, dos lenguajes ampliamente usados en ciencia de datos, docencia e investigación. El objetivo es que los participantes comprendan los conceptos fundamentales y logren escribir pequeños programas que les permitan resolver problemas simples.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Módulo 7</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_07.html#objetivos-de-aprendizaje",
+    "href": "modulos/modulo_07.html#objetivos-de-aprendizaje",
+    "title": "Módulo 7",
+    "section": "Objetivos de aprendizaje",
+    "text": "Objetivos de aprendizaje\n\nComprender la estructura básica de un programa en R y en Python.\nDeclarar variables y realizar operaciones matemáticas simples.\nCrear y manipular vectores o listas.\nEscribir estructuras de control: condicionales y bucles.\nDesarrollar ejemplos prácticos aplicados a la educación y la ciencia de datos.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Módulo 7</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_07.html#conceptos-clave",
+    "href": "modulos/modulo_07.html#conceptos-clave",
+    "title": "Módulo 7",
+    "section": "Conceptos clave",
+    "text": "Conceptos clave\n\nLenguajes interpretados: no requieren compilación, se ejecutan línea por línea.\nSintaxis básica: cómo se escriben instrucciones en cada lenguaje.\nVariables: nombres asociados a valores.\nEstructuras de datos simples: listas, vectores y data frames.\nControl de flujo: condicionales (if) y bucles (for, while).",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Módulo 7</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_07.html#ejemplo-en-python",
+    "href": "modulos/modulo_07.html#ejemplo-en-python",
+    "title": "Módulo 7",
+    "section": "Ejemplo en Python",
+    "text": "Ejemplo en Python\nArchivo intro_python.py:\n# Variables y operaciones\na = 5\nb = 3\nsuma = a + b\nprint(\"La suma es:\", suma)\n\n# Listas\nestudiantes = [\"Ana\", \"Luis\", \"Pedro\"]\nprint(\"Primer estudiante:\", estudiantes[0])\n\n# Condicional\nnota = 5.8\nif nota &gt;= 5.5:\n    print(\"Aprobado\")\nelse:\n    print(\"Reprobado\")\n\n# Bucle\nfor i in range(1, 6):\n    print(\"Número:\", i)",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Módulo 7</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_07.html#ejemplo-en-r",
+    "href": "modulos/modulo_07.html#ejemplo-en-r",
+    "title": "Módulo 7",
+    "section": "Ejemplo en R",
+    "text": "Ejemplo en R\nArchivo intro_r.R:\n# Variables y operaciones\na &lt;- 5\nb &lt;- 3\nsuma &lt;- a + b\nprint(paste(\"La suma es:\", suma))\n\n# Vectores\nestudiantes &lt;- c(\"Ana\", \"Luis\", \"Pedro\")\nprint(paste(\"Primer estudiante:\", estudiantes[1]))\n\n# Condicional\nnota &lt;- 5.8\nif (nota &gt;= 5.5) {\n  print(\"Aprobado\")\n} else {\n  print(\"Reprobado\")\n}\n\n# Bucle\nfor (i in 1:5) {\n  print(paste(\"Número:\", i))\n}",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Módulo 7</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_07.html#comparación-de-sintaxis",
+    "href": "modulos/modulo_07.html#comparación-de-sintaxis",
+    "title": "Módulo 7",
+    "section": "Comparación de sintaxis",
+    "text": "Comparación de sintaxis\n\n\n\nConcepto\nPython\nR\n\n\n\n\nAsignar valor\nx = 10\nx &lt;- 10\n\n\nListas/vectores\nlista = [1, 2, 3]\nvec &lt;- c(1, 2, 3)\n\n\nCondicional\nif x &gt; 5:\nif (x &gt; 5) { ... }\n\n\nBucle for\nfor i in range(5):\nfor (i in 1:5) { ... }\n\n\nImprimir\nprint(\"Hola\")\nprint(\"Hola\")",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Módulo 7</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_07.html#actividad-práctica",
+    "href": "modulos/modulo_07.html#actividad-práctica",
+    "title": "Módulo 7",
+    "section": "Actividad práctica",
+    "text": "Actividad práctica\n\nEn Python:\n\nCrea una lista con 5 notas ficticias de estudiantes.\nCalcula el promedio y muestra si el grupo aprueba o no.\n\nEn R:\n\nCrea un vector con las mismas notas.\nUsa una estructura if para determinar el estado del grupo.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Módulo 7</span>"
+    ]
+  },
+  {
+    "objectID": "modulos/modulo_07.html#resultado-esperado",
+    "href": "modulos/modulo_07.html#resultado-esperado",
+    "title": "Módulo 7",
+    "section": "Resultado esperado",
+    "text": "Resultado esperado\nAl finalizar este módulo, los participantes serán capaces de:\n\nEscribir programas básicos en R y Python.\nUsar variables, estructuras de datos simples y bucles.\nAplicar condicionales a problemas educativos sencillos.\nComprender similitudes y diferencias entre ambos lenguajes.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Módulo 7</span>"
+    ]
+  }
+]

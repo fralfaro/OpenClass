@@ -1,0 +1,44 @@
+project:
+  type: book
+  output-dir: docs
+  
+book:
+  title: "OpenClass: Herramientas Abiertas e IA"
+  author: 
+    - "Francisco Alfaro Medina"
+    - "Valeska Canales Pozo"
+  date: "11/12/2025"
+  favicon: "images/icon.png"
+  repo-url: "https://github.com/fralfaro/OpenClass"
+
+  chapters:
+    - index.qmd
+    - modulos/modulo_00.qmd
+    - modulos/modulo_01.qmd
+    - modulos/modulo_02.qmd
+    - modulos/modulo_03.qmd
+    - modulos/modulo_04.qmd
+    - modulos/modulo_05.qmd
+    - modulos/modulo_06.qmd
+    - modulos/modulo_07.qmd
+
+index:
+  qmd:
+lang: es
+
+format:
+  html:
+    theme:
+      light: [flatly, light.scss]
+      dark: [darkly, dark.scss]
+    number-sections: false
+    toc: false
+    page-layout: full
+  epub:
+    cover-image: images/icon.png
+
+
+filters: 
+  - pyodide
+
+sin-enumeracion: true  # Esta línea es opcional para indicar que no se desea enumeración

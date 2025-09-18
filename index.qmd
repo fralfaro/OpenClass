@@ -1,11 +1,4 @@
-# OpenClass: Herramientas Abiertas e IA para Docentes
-
-![example workflow](https://github.com/fralfaro/OpenClass/actions/workflows/documentation.yml/badge.svg)
-[![documentation](https://img.shields.io/badge/📖-docs-brightgreen)](https://fralfaro.github.io/OpenClass/)
-
-<header>
-<img src="./images/book2.png" alt="DMAT" width="300"/>
-</header>
+# 🏠 Home
 
 
 ## 🎯 Descripción

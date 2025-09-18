@@ -1,0 +1,1108 @@
+# Matemáticas Divertidas
+
+<center>
+<img src="../../images/math.png" width="500">
+</center>
+
+<br>
+
+En este capítulo, vamos a explorar cómo podemos utilizar Python para hacer las matemáticas más divertidas y accesibles. Con Python, no solo podemos resolver problemas matemáticos, sino también crear simulaciones, visualizar datos y entender conceptos complejos de una manera más interactiva.
+
+🎯 **Objetivos del capítulo**
+
+- Aprender los conceptos básicos de Python.
+- Familiarizarse con la sintaxis y funcionalidad de Python.
+- Resolver problemas prácticos y entretenidos.
+- Experimentar con el código directamente en el navegador utilizando `Quarto-Pyodide`.
+
+
+## 🌡️ Conversión de Temperatura
+
+Un programa para convertir grados Celsius a Fahrenheit. Este ejercicio es ideal para practicar operaciones matemáticas básicas y el uso de funciones en Python.
+
+### Contexto
+
+La conversión de temperatura es una operación común en muchos campos científicos, desde la meteorología hasta la física y la química. Conocer cómo convertir entre diferentes unidades de temperatura es esencial en muchas aplicaciones. En este ejercicio, utilizaremos la fórmula de conversión para transformar una temperatura dada en grados Celsius a su equivalente en grados Fahrenheit.
+
+### Fórmula de Conversión
+
+La fórmula para convertir grados Celsius a Fahrenheit es:
+
+$$ \text{Fahrenheit} = \left( \text{Celsius} \times \frac{9}{5} \right) + 32 $$
+
+### Objetivos del Ejercicio
+
+::: {.callout-tip collapse="false" title="Desafío:"}
+El objetivo de este ejercicio es escribir una función en Python que convierta grados Celsius a Fahrenheit y pruebe la función con un ejemplo.
+:::
+
+1. **Definir una función**: Crearemos una función llamada `celsius_a_fahrenheit` que tome un parámetro: la temperatura en grados Celsius (`celsius`).
+2. **Implementar la conversión**: Usaremos la fórmula de conversión para calcular la temperatura en grados Fahrenheit.
+3. **Probar la función**: Probaremos la función con un valor de ejemplo y mostraremos el resultado.
+
+### Código para Conversión de Temperatura
+
+```{pyodide-python}
+def celsius_a_fahrenheit(celsius):
+    return (celsius * 9/5) + 32
+
+# Ejemplo de uso
+celsius = 25
+fahrenheit = celsius_a_fahrenheit(celsius)
+print(f"{celsius} grados Celsius son {fahrenheit} grados Fahrenheit")
+```
+
+### Explicación del Código
+
+1. **Parámetro de Entrada**:
+    - `celsius`: Un número que representa la temperatura en grados Celsius.
+
+2. **Fórmula de Conversión**:
+    - La función utiliza la fórmula $(celsius \times \frac{9}{5}) + 32$ para convertir la temperatura a grados Fahrenheit y devuelve el resultado.
+
+### Ejemplo de Uso
+
+El código de ejemplo muestra cómo usar la función `celsius_a_fahrenheit` con un valor de temperatura de ejemplo (25 grados Celsius). Al ejecutar este ejemplo, se imprimirá `25 grados Celsius son 77.0 grados Fahrenheit`.
+
+
+### Prueba y Modificación
+
+Los estudiantes pueden modificar los valores de `celsius` para probar diferentes temperaturas y explorar cómo funciona la función. A continuación, se presentan tres ejercicios de ejemplo:
+
+**Ejercicio 1: Convertir 0 Grados Celsius a Fahrenheit**
+
+::: {.panel-tabset}
+
+## Ejercicio
+
+```{pyodide-python}
+celsius = # escribir aquí el valor de celsius
+fahrenheit = celsius_a_fahrenheit(celsius)
+print(f"{celsius} grados Celsius son {fahrenheit} grados Fahrenheit")
+```
+
+## Solución
+
+
+```{pyodide-python}
+celsius = 0
+fahrenheit = celsius_a_fahrenheit(celsius)
+print(f"{celsius} grados Celsius son {fahrenheit} grados Fahrenheit")
+```
+
+:::
+
+
+
+**Ejercicio 2: Convertir -10 Grados Celsius a Fahrenheit**
+
+::: {.panel-tabset}
+
+## Ejercicio
+
+```{pyodide-python}
+celsius = # escribir aquí el valor de celsius
+fahrenheit = celsius_a_fahrenheit(celsius)
+print(f"{celsius} grados Celsius son {fahrenheit} grados Fahrenheit")
+```
+
+## Solución
+
+
+```{pyodide-python}
+celsius = -10
+fahrenheit = celsius_a_fahrenheit(celsius)
+print(f"{celsius} grados Celsius son {fahrenheit} grados Fahrenheit")
+```
+
+:::
+
+**Ejercicio 3: Convertir 100 Grados Celsius a Fahrenheit**
+
+::: {.panel-tabset}
+
+## Ejercicio
+
+```{pyodide-python}
+celsius = # escribir aquí el valor de celsius
+fahrenheit = celsius_a_fahrenheit(celsius)
+print(f"{celsius} grados Celsius son {fahrenheit} grados Fahrenheit")
+```
+
+## Solución
+
+
+```{pyodide-python}
+celsius = 100
+fahrenheit = celsius_a_fahrenheit(celsius)
+print(f"{celsius} grados Celsius son {fahrenheit} grados Fahrenheit")
+```
+
+:::
+
+
+## 🏋️‍♂️ Cálculo del Índice de Masa Corporal (IMC)
+
+Un programa para calcular el IMC de una persona. Este ejercicio es útil para practicar operaciones matemáticas y el uso de funciones en Python.
+
+### Contexto
+
+El Índice de Masa Corporal (IMC) es una medida de la grasa corporal basada en la altura y el peso de una persona. La fórmula para calcular el IMC es:
+
+$$ \text{IMC} = \frac{\text{peso}}{\text{altura}^2} $$
+
+### Objetivos del Ejercicio
+
+::: {.callout-tip collapse="false" title="Desafío:"}
+El objetivo de este ejercicio es escribir una función en Python que calcule el IMC de una persona y pruebe la función con un ejemplo.
+:::
+
+1. **Definir una función**: Crearemos una función llamada `calcular_imc` que tome dos parámetros: el peso (`peso`) y la altura (`altura`).
+2. **Implementar el cálculo**: Usaremos la fórmula del IMC para calcular el índice y devolver el resultado.
+3. **Probar la función**: Probaremos la función con valores de ejemplo y mostraremos el resultado.
+
+### Código para el Cálculo del IMC
+
+```{pyodide-python}
+def calcular_imc(peso, altura):
+    return peso / (altura ** 2)
+
+# Ejemplo de uso
+peso = 70  # kg
+altura = 1.75  # m
+imc = calcular_imc(peso, altura)
+print(f"Para un peso de {peso} kg y una altura de {altura} m, el IMC es {imc:.2f}")
+```
+
+### Explicación del Código
+
+1. **Parámetros de Entrada**:
+    - `peso`: Un número que representa el peso de la persona en kilogramos.
+    - `altura`: Un número que representa la altura de la persona en metros.
+
+2. **Fórmula del IMC**:
+    - La función utiliza la fórmula $\frac{peso}{altura^2}$ para calcular el IMC y devuelve el resultado.
+
+### Ejemplo de Uso
+
+El código de ejemplo muestra cómo usar la función `calcular_imc` con valores de ejemplo (70 kg de peso y 1.75 m de altura).
+Al ejecutar este ejemplo, se imprimirá `Para un peso de 70 kg y una altura de 1.75 m, el IMC es 22.86`.
+
+
+### Prueba y Modificación
+
+Los estudiantes pueden modificar los valores de `peso` y `altura` para probar diferentes combinaciones y explorar cómo funciona la función. A continuación, se presentan tres ejercicios de ejemplo:
+
+**Ejercicio 1: Calcular el IMC para un peso de 80 kg y una altura de 1.80 m**
+
+
+::: {.panel-tabset}
+
+## Ejercicio
+
+```{pyodide-python}
+peso = # escribir aquí el valor de peso
+altura = # escribir aquí el valor de altura
+imc = calcular_imc(peso, altura)
+print(f"Para un peso de {peso} kg y una altura de {altura} m, el IMC es {imc:.2f}")
+```
+
+## Solución
+
+```{pyodide-python}
+peso = 80  # kg
+altura = 1.80  # m
+imc = calcular_imc(peso, altura)
+print(f"Para un peso de {peso} kg y una altura de {altura} m, el IMC es {imc:.2f}")
+```
+
+:::
+
+
+
+
+**Ejercicio 2: Calcular el IMC para un peso de 60 kg y una altura de 1.60 m**
+
+::: {.panel-tabset}
+
+## Ejercicio
+
+```{pyodide-python}
+peso = # escribir aquí el valor de peso
+altura = # escribir aquí el valor de altura
+imc = calcular_imc(peso, altura)
+print(f"Para un peso de {peso} kg y una altura de {altura} m, el IMC es {imc:.2f}")
+```
+
+## Solución
+
+```{pyodide-python}
+peso = 60  # kg
+altura = 1.60  # m
+imc = calcular_imc(peso, altura)
+print(f"Para un peso de {peso} kg y una altura de {altura} m, el IMC es {imc:.2f}")
+```
+
+:::
+
+**Ejercicio 3: Calcular el IMC para un peso de 90 kg y una altura de 1.70 m**
+
+::: {.panel-tabset}
+
+## Ejercicio
+
+```{pyodide-python}
+peso = # escribir aquí el valor de peso
+altura = # escribir aquí el valor de altura
+imc = calcular_imc(peso, altura)
+print(f"Para un peso de {peso} kg y una altura de {altura} m, el IMC es {imc:.2f}")
+```
+
+## Solución
+
+```{pyodide-python}
+peso = 90  # kg
+altura = 1.70  # m
+imc = calcular_imc(peso, altura)
+print(f"Para un peso de {peso} kg y una altura de {altura} m, el IMC es {imc:.2f}")
+```
+
+:::
+
+
+## 2️⃣ Verificación de Números Pares e Impares
+
+Un programa para verificar si un número es par o impar. Este ejercicio es útil para practicar operaciones matemáticas y el uso de funciones en Python.
+
+### Contexto
+
+Un número es considerado par si es divisible por 2, y es impar si no lo es. La condición para verificar esto se puede expresar como:
+
+$$ 
+\text{Número es par} \iff \text{Número} \% 2 = 0 
+$$
+
+### Objetivos del Ejercicio
+
+::: {.callout-tip collapse="false" title="Desafío:"}
+El objetivo de este ejercicio es escribir una función en Python que determine si un número es par o impar y probar la función con ejemplos.
+:::
+
+1. **Definir una función**: Crearemos una función llamada `verificar_paridad` que tome un parámetro: el número (`numero`).
+2. **Implementar la verificación**: Usaremos el operador módulo (`%`) para verificar si el número es par o impar y mostrar el resultado correspondiente.
+3. **Probar la función**: Probaremos la función con varios números y mostraremos los resultados.
+
+### Código para la Verificación de Números Pares e Impares
+```{pyodide-python}
+def verificar_paridad(numero):
+    if numero % 2 == 0:  # Verifica si el número es par
+        return "par"
+    else:  # Si no es par, entonces es impar
+        return "impar"
+
+# Ejemplo de uso
+numero = 7
+resultado = verificar_paridad(numero)
+print(f"{numero} es {resultado}")
+```
+
+### Explicación del Código
+
+1. **Parámetro de Entrada**:
+   - `numero`: Un número entero que se desea verificar.
+
+2. **Verificación de Paridad**:
+   - La función utiliza el operador módulo `%` para determinar si el número es divisible por 2. Si es par, se imprime un mensaje indicando que el número es par; de lo contrario, se imprime que es impar.
+
+### Ejemplo de Uso
+
+El código de ejemplo muestra cómo usar la función `verificar_paridad` con el número 7. Al ejecutar este ejemplo, se imprimirá `El número 7 es impar.`.
+
+
+### Prueba y Modificación
+
+Los estudiantes pueden modificar el valor de `numero` para probar si es par o impar y explorar cómo funciona la función. A continuación, se presentan tres ejercicios de ejemplo:
+
+**Ejercicio 1: Verificar la paridad de 10**
+
+::: {.panel-tabset}
+
+## Ejercicio
+
+```{pyodide-python}
+numero = # escribir aquí el valor de numero
+resultado = verificar_paridad(numero)
+print(f"{numero} es {resultado}")
+```
+
+## Solución
+
+
+```{pyodide-python}
+numero = 10
+resultado = verificar_paridad(numero)
+print(f"{numero} es {resultado}")
+```
+
+:::
+
+
+
+**Ejercicio 2: Verificar la paridad de 15**
+::: {.panel-tabset}
+
+## Ejercicio
+
+```{pyodide-python}
+numero = # escribir aquí el valor de numero
+resultado = verificar_paridad(numero)
+print(f"{numero} es {resultado}")
+```
+
+## Solución
+
+
+```{pyodide-python}
+numero = 15
+resultado = verificar_paridad(numero)
+print(f"{numero} es {resultado}")
+```
+
+:::
+
+**Ejercicio 3: Verificar la paridad de 22**
+
+::: {.panel-tabset}
+
+## Ejercicio
+
+```{pyodide-python}
+numero = # escribir aquí el valor de numero
+resultado = verificar_paridad(numero)
+print(f"{numero} es {resultado}")
+```
+
+## Solución
+
+
+```{pyodide-python}
+numero = 22
+resultado = verificar_paridad(numero)
+print(f"{numero} es {resultado}")
+```
+
+:::
+
+
+## 📅 Verificación de Año Bisiesto
+
+En este ejercicio, vamos a crear un programa que determine si un año es [bisiesto](https://es.wikipedia.org/wiki/A%C3%B1o_bisiesto). Este ejercicio es excelente para practicar el uso de operadores lógicos y condicionales en Python.
+
+### Contexto
+
+Un año bisiesto es un año que tiene 366 días en lugar de los 365 días habituales. Este día adicional se añade en febrero, que tiene 29 días en lugar de 28. Las reglas para determinar si un año es bisiesto son las siguientes:
+
+1. Un año es bisiesto si es divisible por 4.
+2. Sin embargo, si el año es divisible por 100, no es un año bisiesto a menos que también sea divisible por 400.
+
+### Objetivos del Ejercicio
+
+::: {.callout-tip collapse="false" title="Desafío:"}
+El objetivo de este ejercicio es escribir una función en Python que determine si un año es bisiesto o no, utilizando las reglas mencionadas anteriormente.
+:::
+
+1. **Definir una función**: Crearemos una función llamada `es_bisiesto` que tome un parámetro: el año (`anio`) a verificar.
+2. **Implementar la lógica**: Usaremos operadores lógicos (`and`, `or`) y estructuras condicionales (`if`, `else`) para determinar si el año es bisiesto.
+3. **Probar la función**: Probaremos la función con diferentes años para asegurarnos de que funcione correctamente.
+
+### Código para Verificación de Año Bisiesto
+
+```{pyodide-python}
+def es_bisiesto(anio):
+    if (anio % 4 == 0 and anio % 100 != 0) or (anio % 400 == 0):
+        return "año bisiesto"
+    else:
+        return "año no bisiesto"
+
+# Ejemplo de uso
+anio = 2024
+resultado = es_bisiesto(anio)
+print(f"{anio} es {resultado}")
+```
+
+### Explicación del Código
+
+Este código define una función llamada `es_bisiesto` que realiza lo siguiente:
+
+1. **Parámetro de Entrada**:
+    - `anio`: Un entero que representa el año a verificar.
+
+2. **Lógica para Determinar Año Bisiesto**:
+    - Utiliza operadores lógicos y condicionales para verificar las reglas de un año bisiesto.
+    - **Regla 1**: `(anio % 4 == 0 and anio % 100 != 0)` - Un año es bisiesto si es divisible por 4 y no es divisible por 100.
+    - **Regla 2**: `(anio % 400 == 0)` - Un año es bisiesto si es divisible por 400.
+    - Si alguna de las reglas es verdadera, la función devuelve `True`, indicando que el año es bisiesto. De lo contrario, devuelve `False`.
+
+### Ejemplo de Uso
+
+El código de ejemplo muestra cómo usar la función `es_bisiesto` para verificar si el año 2024 es bisiesto. Al ejecutar este ejemplo, se imprimirá `2024 es un año bisiesto`.
+
+
+
+### Prueba y Modificación
+
+Los estudiantes pueden modificar el valor de `anio` para comprobar si es un año bisiesto y explorar cómo funciona la función. A continuación, se presentan tres ejercicios de ejemplo:
+
+**Ejercicio 1: Verificar si el año 2025 es bisiesto**
+
+::: {.panel-tabset}
+
+## Ejercicio
+
+```{pyodide-python}
+anio = # escribir aquí el valor de anio
+resultado = es_bisiesto(anio)
+print(f"{anio} es {resultado}")
+```
+
+## Solución
+
+```{pyodide-python}
+anio = 2025
+resultado = es_bisiesto(anio)
+print(f"{anio} es {resultado}")
+```
+
+:::
+
+
+
+**Ejercicio 2: Verificar si el año 1900 es bisiesto**
+
+::: {.panel-tabset}
+
+## Ejercicio
+
+```{pyodide-python}
+anio = # escribir aquí el valor de anio
+resultado = es_bisiesto(anio)
+print(f"{anio} es {resultado}")
+```
+
+## Solución
+
+```{pyodide-python}
+anio = 1900
+resultado = es_bisiesto(anio)
+print(f"{anio} es {resultado}")
+```
+
+:::
+
+**Ejercicio 3: Verificar si el año 2000 es bisiesto**
+
+::: {.panel-tabset}
+
+## Ejercicio
+
+```{pyodide-python}
+anio = # escribir aquí el valor de anio
+resultado = es_bisiesto(anio)
+print(f"{anio} es {resultado}")
+```
+
+## Solución
+
+```{pyodide-python}
+anio = 2000
+resultado = es_bisiesto(anio)
+print(f"{anio} es {resultado}")
+```
+
+:::
+
+
+## 🧮 Calculadora Básica
+
+En este ejercicio, vamos a crear una simple calculadora que puede realizar operaciones básicas como suma, resta, multiplicación y división. Esta actividad es ideal para que los principiantes practiquen el uso de funciones, operadores aritméticos y estructuras condicionales en Python.
+
+### Contexto
+
+Una calculadora es una herramienta fundamental que permite realizar cálculos matemáticos básicos y complejos. En este ejercicio, nos centraremos en construir una calculadora que pueda manejar cuatro operaciones básicas: suma (`+`), resta (`-`), multiplicación (`*`) y división (`/`). Además, nos aseguraremos de manejar casos especiales como la división por cero, que no es una operación válida en matemáticas y debe ser tratada con cuidado en nuestro código.
+
+### Objetivos del Ejercicio
+
+::: {.callout-tip collapse="false" title="Desafío:"}
+El objetivo de este ejercicio es escribir una función en Python que pueda realizar las operaciones básicas de una calculadora y manejar casos especiales como la división por cero.
+:::
+
+1. **Definir una función**: Crearemos una función llamada `calculadora` que tome tres parámetros: la operación a realizar (`operacion`) y dos números (`num1` y `num2`).
+2. **Implementar las operaciones**: Usaremos estructuras condicionales (`if`, `elif`, `else`) para definir las operaciones aritméticas básicas.
+3. **Manejo de errores**: Incluiremos una verificación para la división por cero y devolveremos un mensaje de error apropiado.
+4. **Probar la función**: Probaremos la función con diferentes operaciones y valores para asegurarnos de que funcione correctamente.
+
+### Código de la Calculadora
+
+```{pyodide-python}
+def calculadora(operacion, num1, num2):
+    if operacion == '+':
+        return f"Resultado: {num1 + num2}"
+    elif operacion == '-':
+        return f"Resultado: {num1 - num2}"
+    elif operacion == '*':
+        return f"Resultado: {num1 * num2}"
+    elif operacion == '/':
+        if num2 != 0:
+            return f"Resultado: {num1 / num2}"
+        else:
+            return "Error: División por cero"
+    else:
+        return "Operación no válida"
+
+# Ejemplo de uso
+operacion = '+'
+num1 = 10
+num2 = 5
+resultado = calculadora(operacion, num1, num2)
+print(f"Para la operación {num1} {operacion} {num2} ... {resultado}")
+```
+
+### Explicación del Código
+
+Este código define una función llamada `calculadora` que realiza lo siguiente:
+
+1. **Parámetros de Entrada**:
+    - `operacion`: Un string que indica la operación a realizar (`+`, `-`, `*`, `/`).
+    - `num1`: El primer número para la operación.
+    - `num2`: El segundo número para la operación.
+
+2. **Estructura Condicional**:
+    - Usa `if`, `elif`, y `else` para verificar qué operación se debe realizar.
+    - Realiza la operación correspondiente y devuelve el resultado en un formato de cadena que incluye el texto "Resultado: ".
+
+3. **Manejo de Errores**:
+    - Para la operación de división (`/`), verifica si `num2` es diferente de cero antes de realizar la división. Si `num2` es cero, devuelve un mensaje de error "Error: División por cero".
+    - Si se proporciona una operación no válida, devuelve "Operación no válida".
+
+### Ejemplo de Uso
+
+El código de ejemplo muestra cómo usar la función `calculadora` con una operación de suma (`+`), y los números `10` y `5`.
+Al ejecutar este ejemplo, se imprimirá `Para la operación 10 + 5, el resultado es Resultado: 15`.
+
+
+### Prueba y Modificación
+
+Los estudiantes pueden modificar los valores de `operacion`, `num1`, y `num2` para probar diferentes operaciones y explorar cómo funciona la función de calculadora. A continuación, se presentan seis ejercicios de ejemplo:
+
+
+
+**Ejercicio 1: Suma de 10 + 5**
+
+::: {.panel-tabset}
+
+## Ejercicio
+
+```{pyodide-python}
+operacion = '+'
+num1 = # escribir aquí el valor de num1
+num2 = # escribir aquí el valor de num2
+resultado = calculadora(operacion, num1, num2)
+print(f"Para la operación {num1} {operacion} {num2} ... {resultado}")
+```
+
+## Solución
+
+```{pyodide-python}
+operacion = '+'
+num1 = 10
+num2 = 5
+resultado = calculadora(operacion, num1, num2)
+print(f"Para la operación {num1} {operacion} {num2} ... {resultado}")
+```
+
+:::
+
+
+
+**Ejercicio 2: Resta de 20 - 10**
+
+::: {.panel-tabset}
+
+## Ejercicio
+
+```{pyodide-python}
+operacion = '-'
+num1 = # escribir aquí el valor de num1
+num2 = # escribir aquí el valor de num2
+resultado = calculadora(operacion, num1, num2)
+print(f"Para la operación {num1} {operacion} {num2} ... {resultado}")
+```
+
+## Solución
+
+```{pyodide-python}
+operacion = '-'
+num1 = 20
+num2 = 10
+resultado = calculadora(operacion, num1, num2)
+print(f"Para la operación {num1} {operacion} {num2} ... {resultado}")
+```
+
+:::
+
+
+
+**Ejercicio 3: Multiplicación de 3 * 4**
+
+::: {.panel-tabset}
+
+## Ejercicio
+
+```{pyodide-python}
+operacion = '*'
+num1 = # escribir aquí el valor de num1
+num2 = # escribir aquí el valor de num2
+resultado = calculadora(operacion, num1, num2)
+print(f"Para la operación {num1} {operacion} {num2} ... {resultado}")
+```
+
+## Solución
+
+```{pyodide-python}
+operacion = '*'
+num1 = 3
+num2 = 4
+resultado = calculadora(operacion, num1, num2)
+print(f"Para la operación {num1} {operacion} {num2} ... {resultado}")
+```
+
+:::
+
+
+
+**Ejercicio 4: División de 10 / 2**
+
+::: {.panel-tabset}
+
+## Ejercicio
+
+```{pyodide-python}
+operacion = '/'
+num1 = # escribir aquí el valor de num1
+num2 = # escribir aquí el valor de num2
+resultado = calculadora(operacion, num1, num2)
+print(f"Para la operación {num1} {operacion} {num2} ... {resultado}")
+```
+
+## Solución
+
+```{pyodide-python}
+operacion = '/'
+num1 = 10
+num2 = 2
+resultado = calculadora(operacion, num1, num2)
+print(f"Para la operación {num1} {operacion} {num2} ... {resultado}")
+```
+
+:::
+
+
+
+**Ejercicio 5: División de 10 / 0 (División por cero)**
+
+::: {.panel-tabset}
+
+## Ejercicio
+
+```{pyodide-python}
+operacion = '/'
+num1 = # escribir aquí el valor de num1
+num2 = # escribir aquí el valor de num2
+resultado = calculadora(operacion, num1, num2)
+print(f"Para la operación {num1} {operacion} {num2} ... {resultado}")
+```
+
+## Solución
+
+```{pyodide-python}
+operacion = '/'
+num1 = 10
+num2 = 0
+resultado = calculadora(operacion, num1, num2)
+print(f"Para la operación {num1} {operacion} {num2} ... {resultado}")
+```
+
+:::
+
+
+
+**Ejercicio 6: Operación no válida "+-" con 5 y 7**
+
+::: {.panel-tabset}
+
+## Ejercicio
+
+```{pyodide-python}
+operacion = '+-'
+num1 = # escribir aquí el valor de num1
+num2 = # escribir aquí el valor de num2
+resultado = calculadora(operacion, num1, num2)
+print(f"Para la operación {num1} {operacion} {num2} ... {resultado}")
+```
+
+## Solución
+
+```{pyodide-python}
+operacion = '+-'
+num1 = 5
+num2 = 7
+resultado = calculadora(operacion, num1, num2)
+print(f"Para la operación {num1} {operacion} {num2} ... {resultado}")
+```
+
+:::
+
+
+
+
+## 🔢 Número Primo
+
+Un programa para verificar si un número es [primo](https://es.wikipedia.org/wiki/N%C3%BAmero_primo). Este ejercicio es útil para practicar el uso de bucles, estructuras condicionales y funciones en Python.
+
+### Contexto
+
+Un número primo es un número mayor que 1 que no tiene divisores positivos además de 1 y sí mismo. Este ejercicio consiste en determinar si un número dado es primo.
+
+### Objetivos del Ejercicio
+
+::: {.callout-tip collapse="false" title="Desafío:"}
+El objetivo de este ejercicio es escribir una función en Python que verifique si un número es primo y pruebe la función con un ejemplo.
+:::
+
+1. **Definir una función**: Crearemos una función llamada `es_primo` que tome un parámetro: el número a verificar (`n`).
+2. **Implementar la verificación**: Usaremos un bucle para comprobar si el número tiene divisores distintos de 1 y sí mismo.
+3. **Probar la función**: Probaremos la función con un valor de ejemplo y mostraremos el resultado.
+
+### Código para Verificación de Número Primo
+
+```{pyodide-python}
+def es_primo(n):
+    if n <= 1:
+        return "número no primo"
+    for i in range(2, n):
+        if n % i == 0:
+            return "número no primo"
+    return "número primo"
+
+# Ejemplo de uso
+numero = 29
+resultado = es_primo(numero)
+print(f"{numero} es {resultado}")
+```
+
+### Explicación del Código
+
+Este código define una función llamada `es_primo` que realiza lo siguiente:
+
+1. **Parámetro de Entrada**:
+    - `n`: Un entero que representa el número a verificar.
+
+2. **Lógica de Verificación**:
+    - Si `n` es menor o igual a `1`, la función devuelve `False` indicando que no es un número primo.
+    - Usa un bucle `for` para iterar desde `2` hasta `n-1`. Si `n` es divisible por cualquier número en este rango, la función devuelve `False` indicando que no es un número primo.
+    - Si el bucle termina sin encontrar divisores, la función devuelve `True` indicando que el número es primo.
+
+### Ejemplo de Uso
+
+El código de ejemplo muestra cómo usar la función `es_primo` con un valor de ejemplo (29). Al ejecutar este ejemplo, se imprimirá `29 es un número primo`.
+
+
+
+### Prueba y Modificación
+
+Los estudiantes pueden modificar el valor de `numero` para probar si es un número primo y explorar cómo funciona la función. A continuación, se presentan cuatro ejercicios de ejemplo:
+
+
+**Ejercicio 1: Verificar si 39 es un número primo**
+
+::: {.panel-tabset}
+
+## Ejercicio
+
+```{pyodide-python}
+numero = # escribir aquí el valor de numero
+resultado = es_primo(numero)
+print(f"{numero} es {resultado}")
+```
+
+## Solución
+
+```{pyodide-python}
+numero = 39
+resultado = es_primo(numero)
+print(f"{numero} es {resultado}")
+```
+
+:::
+
+
+
+**Ejercicio 2: Verificar si 15 es un número primo**
+
+::: {.panel-tabset}
+
+## Ejercicio
+
+```{pyodide-python}
+numero = # escribir aquí el valor de numero
+resultado = es_primo(numero)
+print(f"{numero} es {resultado}")
+```
+
+## Solución
+
+```{pyodide-python}
+numero = 15
+resultado = es_primo(numero)
+print(f"{numero} es {resultado}")
+```
+
+:::
+
+
+
+**Ejercicio 3: Verificar si 2 es un número primo**
+
+::: {.panel-tabset}
+
+## Ejercicio
+
+```{pyodide-python}
+numero = # escribir aquí el valor de numero
+resultado = es_primo(numero)
+print(f"{numero} es {resultado}")
+```
+
+## Solución
+
+```{pyodide-python}
+numero = 2
+resultado = es_primo(numero)
+print(f"{numero} es {resultado}")
+```
+
+:::
+
+
+
+**Ejercicio 4: Verificar si 17 es un número primo**
+
+::: {.panel-tabset}
+
+## Ejercicio
+
+```{pyodide-python}
+numero = # escribir aquí el valor de numero
+resultado = es_primo(numero)
+print(f"{numero} es {resultado}")
+```
+
+## Solución
+
+```{pyodide-python}
+numero = 17
+resultado = es_primo(numero)
+print(f"{numero} es {resultado}")
+```
+
+:::
+
+
+
+## 📜 Conjetura de Collatz
+
+En este ejercicio, vamos a crear un programa que implemente la [Conjetura de Collatz](https://es.wikipedia.org/wiki/Conjetura_de_Collatz), también conocida como la conjetura 3n + 1. Este ejercicio es excelente para practicar el uso de bucles, listas y estructuras condicionales en Python.
+
+### Contexto
+
+La Conjetura de Collatz es un problema matemático no resuelto que involucra una secuencia de números. Comienza con cualquier número positivo entero `n` y aplica las siguientes reglas repetidamente:
+
+1. Si `n` es par, se divide por 2.
+2. Si `n` es impar, se multiplica por 3 y se le suma 1.
+
+La conjetura afirma que, no importa qué valor inicial se elija, la secuencia siempre llegará a 1.
+
+### Objetivos del Ejercicio
+
+::: {.callout-tip collapse="false" title="Desafío:"}
+El objetivo de este ejercicio es escribir una función en Python que implemente la Conjetura de Collatz y genere la secuencia de números hasta llegar a 1.
+:::
+
+1. **Definir una función**: Crearemos una función llamada `conjetura_de_collatz` que tome un parámetro: el número inicial (`n`).
+2. **Implementar la lógica**: Usaremos un bucle `while` para generar la secuencia de números aplicando las reglas de la conjetura.
+3. **Probar la función**: Probaremos la función con un número inicial y mostraremos la secuencia generada.
+
+### Código para la Conjetura de Collatz
+
+```{pyodide-python}
+def conjetura_de_collatz(n):
+    resultado = []
+    while n != 1:
+        resultado.append(n)
+        if n % 2 == 0:
+            n = n // 2
+        else:
+            n = 3 * n + 1
+    resultado.append(n)
+    return resultado
+
+# Ejemplo de uso
+numero = 6
+secuencia = " -> ".join(map(str, conjetura_de_collatz(numero)))
+print(f"La secuencia de Collatz para {numero} es: {secuencia}")
+```
+
+### Explicación del Código
+
+Este código define una función llamada `conjetura_de_collatz` que realiza lo siguiente:
+
+1. **Parámetro de Entrada**:
+    - `n`: Un entero positivo que representa el número inicial de la secuencia.
+
+2. **Lista de Resultados**:
+    - `resultado`: Una lista que almacenará la secuencia de números generada por la conjetura.
+
+3. **Lógica del Bucle**:
+    - Usa un bucle `while` que continúa hasta que `n` sea igual a 1.
+    - En cada iteración, añade el valor actual de `n` a la lista `resultado`.
+    - Si `n` es par, lo divide por 2 usando `n // 2`.
+    - Si `n` es impar, lo multiplica por 3 y le suma 1 usando `3 * n + 1`.
+
+4. **Añadir el Valor Final**:
+    - Después de salir del bucle, añade el valor final 1 a la lista `resultado`.
+
+5. **Devolver la Secuencia**:
+    - La función devuelve la lista `resultado` que contiene la secuencia completa de números.
+
+### Ejemplo de Uso
+
+El código de ejemplo muestra cómo usar la función `conjetura_de_collatz` con un número inicial de 6. Al ejecutar este ejemplo, se imprimirá la secuencia generada, mostrando cada número en la secuencia hasta llegar a 1.
+
+```
+6 -> 3 -> 10 -> 5 -> 16 -> 8 -> 4 -> 2 -> 1
+```
+
+
+### Prueba y Modificación
+
+Los estudiantes pueden modificar el valor de `numero` para explorar la secuencia generada por la Conjetura de Collatz y observar cómo funciona la función. A continuación, se presentan cuatro ejercicios de ejemplo:
+
+
+**Ejercicio 1: Generar la secuencia de Collatz para el número 5**
+
+::: {.panel-tabset}
+
+## Ejercicio
+
+```{pyodide-python}
+numero = # escribir aquí el valor de numero
+secuencia = " -> ".join(map(str, conjetura_de_collatz(numero)))
+print(f"La secuencia de Collatz para {numero} es: {secuencia}")
+```
+
+## Solución
+
+```{pyodide-python}
+numero = 5
+secuencia = " -> ".join(map(str, conjetura_de_collatz(numero)))
+print(f"La secuencia de Collatz para {numero} es: {secuencia}")
+```
+
+:::
+
+
+
+**Ejercicio 2: Generar la secuencia de Collatz para el número 7**
+
+::: {.panel-tabset}
+
+## Ejercicio
+
+```{pyodide-python}
+numero = # escribir aquí el valor de numero
+secuencia = " -> ".join(map(str, conjetura_de_collatz(numero)))
+print(f"La secuencia de Collatz para {numero} es: {secuencia}")
+```
+
+## Solución
+
+```{pyodide-python}
+numero = 7
+secuencia = " -> ".join(map(str, conjetura_de_collatz(numero)))
+print(f"La secuencia de Collatz para {numero} es: {secuencia}")
+```
+
+:::
+
+
+
+**Ejercicio 3: Generar la secuencia de Collatz para el número 15**
+
+::: {.panel-tabset}
+
+## Ejercicio
+
+```{pyodide-python}
+numero = # escribir aquí el valor de numero
+secuencia = " -> ".join(map(str, conjetura_de_collatz(numero)))
+print(f"La secuencia de Collatz para {numero} es: {secuencia}")
+```
+
+## Solución
+
+```{pyodide-python}
+numero = 15
+secuencia = " -> ".join(map(str, conjetura_de_collatz(numero)))
+print(f"La secuencia de Collatz para {numero} es: {secuencia}")
+```
+
+:::
+
+
+
+**Ejercicio 4: Generar la secuencia de Collatz para el número 27**
+
+::: {.panel-tabset}
+
+## Ejercicio
+
+```{pyodide-python}
+numero = # escribir aquí el valor de numero
+secuencia = " -> ".join(map(str, conjetura_de_collatz(numero)))
+print(f"La secuencia de Collatz para {numero} es: {secuencia}")
+```
+
+## Solución
+
+```{pyodide-python}
+numero = 27
+secuencia = " -> ".join(map(str, conjetura_de_collatz(numero)))
+print(f"La secuencia de Collatz para {numero} es: {secuencia}")
+```
+
+:::
+
+
+
+
+
+## Conclusiones
+
+El uso de Python en la enseñanza de las matemáticas no solo moderniza el aprendizaje, sino que también lo vuelve más interactivo y entretenido. A través de ejercicios prácticos como la conversión de temperatura, el cálculo del IMC y la exploración de secuencias matemáticas, los estudiantes adquieren habilidades clave para el mundo tecnológico.
+
+::: {.callout-tip collapse="false" title="Desafío para Estudiantes:"}
+El desafío para los estudiantes es seguir explorando y practicando con Python para hacer las matemáticas más divertidas y comprensibles. ¡Atrévete a resolver problemas, experimentar con nuevas ideas y descubrir cómo la programación puede mejorar tu comprensión de la ciencia y la tecnología!
+:::
+
+
+> 🔑 **Nota**: Para aquellos interesados en continuar su aprendizaje, pueden visitar [este sitio de recursos](https://seth-nut.github.io/resources/) para acceder a material educativo adicional.
